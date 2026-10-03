@@ -51,12 +51,12 @@ export default function TopBar({ onOpenExport }: TopBarProps) {
       {/* Titre centré dans l'espace restant (jamais par-dessus logo/boutons) */}
       <div className="flex-1 min-w-0 px-2 flex items-center justify-center">
         {diagram && (
-          <div className="flex items-center gap-1.5 max-w-full min-w-0">
+          <div className="flex items-stretch gap-1.5 max-w-full min-w-0">
             <button
               onClick={() => stepDiagram(-1)}
               disabled={orderedIds.length < 2}
               title="Accord précédent"
-              className="p-1.5 bg-neutral-900 hover:bg-neutral-800 text-neutral-400 hover:text-gold border border-neutral-800 transition-colors shrink-0 disabled:opacity-40 disabled:pointer-events-none"
+              className="flex items-center justify-center px-2 bg-neutral-900 hover:bg-neutral-800 text-neutral-400 hover:text-gold border border-neutral-800 transition-colors shrink-0 disabled:opacity-40 disabled:pointer-events-none"
             >
               <ChevronLeft size={16} />
             </button>
@@ -81,7 +81,7 @@ export default function TopBar({ onOpenExport }: TopBarProps) {
               onClick={() => stepDiagram(1)}
               disabled={orderedIds.length < 2}
               title="Accord suivant"
-              className="p-1.5 bg-neutral-900 hover:bg-neutral-800 text-neutral-400 hover:text-gold border border-neutral-800 transition-colors shrink-0 disabled:opacity-40 disabled:pointer-events-none"
+              className="flex items-center justify-center px-2 bg-neutral-900 hover:bg-neutral-800 text-neutral-400 hover:text-gold border border-neutral-800 transition-colors shrink-0 disabled:opacity-40 disabled:pointer-events-none"
             >
               <ChevronRight size={16} />
             </button>

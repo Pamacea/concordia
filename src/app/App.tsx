@@ -55,12 +55,12 @@ export default function App() {
           />
         )}
 
-        {/* Onglets de réouverture des panneaux fermés */}
+        {/* Onglets de réouverture des panneaux fermés (masqués en format téléphone) */}
         {!leftSidebarOpen && (
           <button
             onClick={() => setSidebar('left', true)}
             title="Ouvrir le panneau gauche"
-            className="absolute left-0 top-3 z-20 p-2.5 bg-neutral-950/90 border border-neutral-800 border-l-0 text-neutral-400 hover:text-white hover:bg-neutral-800 transition-colors shadow-xl"
+            className="hidden md:block absolute left-0 top-0 z-20 p-2.5 bg-neutral-950/90 border border-t-0 border-neutral-800 border-l-0 text-neutral-400 hover:text-white hover:bg-neutral-800 transition-colors shadow-xl"
           >
             <ChevronRight size={16} />
           </button>
@@ -69,7 +69,7 @@ export default function App() {
           <button
             onClick={() => setSidebar('right', true)}
             title="Ouvrir le panneau droit"
-            className="absolute right-0 top-3 z-20 p-2.5 bg-neutral-950/90 border border-neutral-800 border-r-0 text-neutral-400 hover:text-white hover:bg-neutral-800 transition-colors shadow-xl"
+            className="hidden md:block absolute right-0 top-0 z-20 p-2.5 bg-neutral-950/90 border border-t-0 border-neutral-800 border-r-0 text-neutral-400 hover:text-white hover:bg-neutral-800 transition-colors shadow-xl"
           >
             <ChevronLeft size={16} />
           </button>
