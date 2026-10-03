@@ -1,0 +1,4727 @@
+{
+  "version": "1.0",
+  "groups": [
+    {
+      "id": "1cykvap",
+      "name": "Accords Majeurs & Triades (Cordes 6, 5, 4)",
+      "diagramIds": [
+        "38cs2rt",
+        "sxttiah",
+        "ngstq77",
+        "hkr0xru",
+        "xt5s23y"
+      ]
+    },
+    {
+      "id": "n3kwgsv",
+      "name": "Accords Mineurs & Triades (Cordes 6, 5, 4)",
+      "diagramIds": [
+        "rjzlv45",
+        "0txe7z6",
+        "0s8q8uq",
+        "cc996d0",
+        "depaean",
+        "noy4dnw",
+        "vu5gtgx",
+        "4g4btg9"
+      ]
+    },
+    {
+      "id": "alp5zah",
+      "name": "Accords 6 & Mineur 6",
+      "diagramIds": [
+        "88zgcqc",
+        "vzw1ydn",
+        "22mygr5",
+        "rllh04t",
+        "ngqnutw",
+        "yxjwee5",
+        "twx7h7j",
+        "mjzj4b0",
+        "wr40313"
+      ]
+    },
+    {
+      "id": "oiquj4g",
+      "name": "Accords 7, Majeur 7 (maj7), Mineur 7 (m7)",
+      "diagramIds": [
+        "w6xwtjo",
+        "k9i6p7g",
+        "fswi8hi",
+        "e_cased_7",
+        "obbnzzm",
+        "r8q5xmr",
+        "oswteak",
+        "c_cased_7",
+        "7vlilz1",
+        "c_cased_m7",
+        "nz6ium5",
+        "ru5xjha",
+        "3iyxn1d",
+        "d1xb3jy",
+        "jv76ncd",
+        "q0mjktd"
+      ]
+    },
+    {
+      "id": "ruz38xv",
+      "name": "Accords Mineur maj7, maj7 sus4 & maj7 sus2",
+      "diagramIds": [
+        "w95v1nr",
+        "s2utcs6",
+        "ur5h2p1",
+        "l2m6x0b",
+        "c_cased_maj7sus2",
+        "u3p5fvn",
+        "a9bgb34",
+        "7p6tmfq",
+        "7zfcgwq",
+        "ljkysjg",
+        "gl7wh0r"
+      ]
+    },
+    {
+      "id": "btmuk4p",
+      "name": "Accords Sus2, Sus4, Sus b9 & Sus 9",
+      "diagramIds": [
+        "rtd6wne",
+        "sus2_c6",
+        "c_cased_sus2",
+        "8nf2ca0",
+        "y6gaat2",
+        "ufu1ky3",
+        "bozio5c",
+        "sus4_c4",
+        "97ch496",
+        "po0ddax",
+        "nfir2jp",
+        "mqsw1lu",
+        "tetla2n",
+        "a860vu0",
+        "4414dvb"
+      ]
+    },
+    {
+      "id": "add_chords_grp",
+      "name": "Accords Additions (add9, add11)",
+      "diagramIds": [
+        "c_add9_c5_st5",
+        "c_add11_c5_st5",
+        "c_cased_add9",
+        "twbhjth"
+      ]
+    },
+    {
+      "id": "5i28ttv",
+      "name": "Accords 9, 11, 13 & Extensions (Majeur, Mineur & Dominante)",
+      "diagramIds": [
+        "wnkavlv",
+        "61jkmd1",
+        "awpzo41",
+        "magub62",
+        "2ezho7r",
+        "54bi7e9",
+        "obz6wwf",
+        "min13_c6",
+        "v0yw85z",
+        "6a3gehh",
+        "ro39occ",
+        "0d8pwji",
+        "maj11_c5",
+        "dom11_c5",
+        "c13_c5",
+        "0emynyg",
+        "min13_c5",
+        "c_maj13_c5_st5",
+        "8oxiio5",
+        "h2dsy3k",
+        "7skq4lk",
+        "ti1ults",
+        "una2e8j",
+        "6j42hc9"
+      ]
+    },
+    {
+      "id": "kl7seow",
+      "name": "Accords Augmentés, Diminués, Diminués 7 & Diminué 7 b13",
+      "diagramIds": [
+        "c3bd1u5",
+        "fyxn3k5",
+        "dim_triad_c5",
+        "fit42qu",
+        "e78o2ho",
+        "pmi38zl",
+        "nt9zzgf",
+        "hldx8vo"
+      ]
+    },
+    {
+      "id": "5i0hyiz",
+      "name": "Accords Demi-diminués (m7b5)",
+      "diagramIds": [
+        "twmsk7m",
+        "tdw16h2",
+        "nerwvae"
+      ]
+    },
+    {
+      "id": "ty80wtk",
+      "name": "Accords Altérés & Dominantes Enrichies",
+      "diagramIds": [
+        "3i1hpb7",
+        "en1xr7f",
+        "ssuz64m",
+        "aok6fqf",
+        "dom7b13_c6",
+        "abveui4",
+        "c_7b5_c5_st5",
+        "c_7b9_c5_st5",
+        "c_7sh11_c5_st5"
+      ]
+    },
+    {
+      "id": "j9zqxyr",
+      "name": "Power Chords & Renversements",
+      "diagramIds": [
+        "k19jwv8",
+        "mtkp6jg",
+        "lw0xwmx",
+        "3r089dd",
+        "783umic"
+      ]
+    },
+    {
+      "id": "p6w73kx",
+      "name": "Intervalle",
+      "diagramIds": [
+        "psbi19v",
+        "d52z54n",
+        "p6tiouh",
+        "qp1za8d"
+      ]
+    }
+  ],
+  "diagrams": {
+    "sxttiah": {
+      "id": "sxttiah",
+      "groupId": "1cykvap",
+      "name": "G Majeur (Forme E - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 1,
+          "f": 2,
+          "id": "skej4ej"
+        },
+        {
+          "s": 2,
+          "f": 2,
+          "id": "omvpne7"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "0tmuyp5"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "yicurw9"
+        },
+        {
+          "s": 5,
+          "f": 0,
+          "id": "og42lg4"
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "3",
+        "2": "4",
+        "3": "2",
+        "4": "1",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "ngstq77": {
+      "id": "ngstq77",
+      "groupId": "1cykvap",
+      "name": "C Majeur (Forme A - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "hlq1gdy"
+        },
+        {
+          "s": 3,
+          "f": 2,
+          "id": "jb359od"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "60m0i5x"
+        },
+        {
+          "s": 5,
+          "f": 0,
+          "id": "w5v1rk9"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "hkr0xru": {
+      "id": "hkr0xru",
+      "groupId": "1cykvap",
+      "name": "Eb Majeur (Forme C - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 3
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "5902aj3"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "joxzh9a"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "j9klinh"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "4",
+        "2": "3",
+        "3": "1",
+        "4": "2",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "xt5s23y": {
+      "id": "xt5s23y",
+      "groupId": "1cykvap",
+      "name": "F Majeur (Forme D - Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 3,
+          "f": 2,
+          "id": "vutj5at"
+        },
+        {
+          "s": 4,
+          "f": 3,
+          "id": "g3jxq1x"
+        },
+        {
+          "s": 5,
+          "f": 2,
+          "id": "gsx9gbc"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "1",
+        "3": "2",
+        "4": "4",
+        "5": "3"
+      },
+      "texts": []
+    },
+    "38cs2rt": {
+      "id": "38cs2rt",
+      "groupId": "1cykvap",
+      "name": "A Majeur (Forme G - Corde 6)",
+      "startFret": 2,
+      "root": {
+        "s": 0,
+        "f": 3
+      },
+      "notes": [
+        {
+          "s": 1,
+          "f": 2,
+          "id": "7tlpbaw"
+        },
+        {
+          "s": 2,
+          "f": 0,
+          "id": "50o2lrg"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "7ecm8l1"
+        },
+        {
+          "s": 5,
+          "f": 3,
+          "id": "fdo9xa2"
+        }
+      ],
+      "fingerings": {
+        "0": "4",
+        "1": "3",
+        "2": "1",
+        "3": "1",
+        "4": "X",
+        "5": "4"
+      },
+      "texts": []
+    },
+    "k9i6p7g": {
+      "id": "k9i6p7g",
+      "groupId": "oiquj4g",
+      "name": "G maj7 (Drop 3 - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 1,
+          "id": "4dygcxs"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "8qrn2m4"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "9yy5ydr"
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "X",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "rjzlv45": {
+      "id": "rjzlv45",
+      "groupId": "n3kwgsv",
+      "name": "G mineur (Forme Em - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 1,
+          "f": 2,
+          "id": "jorya4c"
+        },
+        {
+          "s": 2,
+          "f": 2,
+          "id": "isbajgo"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "r0x7kc0"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "ykzbt7d"
+        },
+        {
+          "s": 5,
+          "f": 0,
+          "id": "1sl2us6"
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "3",
+        "2": "4",
+        "3": "1",
+        "4": "1",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "0txe7z6": {
+      "id": "0txe7z6",
+      "groupId": "n3kwgsv",
+      "name": "C mineur (Forme Am - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "onide8r"
+        },
+        {
+          "s": 3,
+          "f": 2,
+          "id": "a8ltz6r"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "4296lsr"
+        },
+        {
+          "s": 5,
+          "f": 0,
+          "id": "ydh91zx"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "0s8q8uq": {
+      "id": "0s8q8uq",
+      "groupId": "n3kwgsv",
+      "name": "F mineur (Forme Dm - Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 3,
+          "f": 2,
+          "id": "41zixrw"
+        },
+        {
+          "s": 4,
+          "f": 3,
+          "id": "es3tfgh"
+        },
+        {
+          "s": 5,
+          "f": 1,
+          "id": "2lqdtcp"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "1",
+        "3": "3",
+        "4": "4",
+        "5": "2"
+      },
+      "texts": []
+    },
+    "cc996d0": {
+      "id": "cc996d0",
+      "groupId": "n3kwgsv",
+      "name": "F# mineur (Forme Cm - Corde 5)",
+      "startFret": 6,
+      "root": {
+        "s": 1,
+        "f": 3
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 1,
+          "id": "97ewq5l"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "vcnkqi2"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "x32vtnj"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "4",
+        "2": "2",
+        "3": "1",
+        "4": "3",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "fswi8hi": {
+      "id": "fswi8hi",
+      "groupId": "oiquj4g",
+      "name": "G7 (Majeur 7 - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 3,
+          "f": 1,
+          "id": "5no9c6u"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "x4e1pap"
+        },
+        {
+          "id": "mt92ymy",
+          "s": 2,
+          "f": 0
+        }
+      ],
+      "fingerings": {
+        "0": "2",
+        "1": "X",
+        "2": "1",
+        "3": "3",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "mjzj4b0": {
+      "id": "mjzj4b0",
+      "groupId": "alp5zah",
+      "name": "C6 (Majeur 6 - Corde 5)",
+      "startFret": 2,
+      "root": {
+        "s": 1,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "wp3c4fd",
+          "s": 3,
+          "f": 0
+        },
+        {
+          "id": "qhye0oa",
+          "s": 2,
+          "f": 3
+        },
+        {
+          "id": "p9wmogt",
+          "s": 4,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "3",
+        "3": "X",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "88zgcqc": {
+      "id": "88zgcqc",
+      "groupId": "alp5zah",
+      "name": "F6 (Majeur 6 - Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 3,
+          "f": 2,
+          "id": "h4oavdi"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "0ljninu"
+        },
+        {
+          "s": 5,
+          "f": 2,
+          "id": "30ufudv"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "1",
+        "3": "3",
+        "4": "1",
+        "5": "4"
+      },
+      "texts": []
+    },
+    "oswteak": {
+      "id": "oswteak",
+      "groupId": "oiquj4g",
+      "name": "G m7 (Mineur 7 - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "itsm21m"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "u98l064"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "usy9la0"
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "X",
+        "2": "1",
+        "3": "1",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "fit42qu": {
+      "id": "fit42qu",
+      "groupId": "kl7seow",
+      "name": "C dim (Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 1,
+          "id": "odrcttm"
+        },
+        {
+          "s": 3,
+          "f": 2,
+          "id": "zwtm3tj"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "ez6old9"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "1",
+        "3": "3",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "7vlilz1": {
+      "id": "7vlilz1",
+      "groupId": "oiquj4g",
+      "name": "C7 (Forme A7 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "yzobd29"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "gmyfx8v"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "97d81hx"
+        },
+        {
+          "s": 5,
+          "f": 0,
+          "id": "pur1h0x"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "1",
+        "4": "4",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "3iyxn1d": {
+      "id": "3iyxn1d",
+      "groupId": "oiquj4g",
+      "name": "F7 (Forme D7 - Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 3,
+          "f": 2,
+          "id": "7p92ofj"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "c23xe9e"
+        },
+        {
+          "s": 5,
+          "f": 2,
+          "id": "aqeoigh"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "1",
+        "3": "3",
+        "4": "2",
+        "5": "4"
+      },
+      "texts": []
+    },
+    "nz6ium5": {
+      "id": "nz6ium5",
+      "groupId": "oiquj4g",
+      "name": "C maj7 (Forme A maj7 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "tkxwl52"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "h4mmpwm"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "249waia"
+        },
+        {
+          "s": 5,
+          "f": 0,
+          "id": "glpz1yj"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "2",
+        "4": "4",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "d1xb3jy": {
+      "id": "d1xb3jy",
+      "groupId": "oiquj4g",
+      "name": "F maj7 (Forme D maj7 - Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 3,
+          "f": 2,
+          "id": "oy0naus"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "ct72jpi"
+        },
+        {
+          "s": 5,
+          "f": 2,
+          "id": "vkemw0k"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "1",
+        "3": "2",
+        "4": "3",
+        "5": "4"
+      },
+      "texts": []
+    },
+    "r8q5xmr": {
+      "id": "r8q5xmr",
+      "groupId": "oiquj4g",
+      "name": "G m7 (Forme Em7 - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 1,
+          "f": 2,
+          "id": "iv5kwgy"
+        },
+        {
+          "s": 2,
+          "f": 0,
+          "id": "ugv3586"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "r7je6h1"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "ta2vpks"
+        },
+        {
+          "s": 5,
+          "f": 0,
+          "id": "r5lu9s8"
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "3",
+        "2": "1",
+        "3": "1",
+        "4": "1",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "ru5xjha": {
+      "id": "ru5xjha",
+      "groupId": "oiquj4g",
+      "name": "C m7 (Forme Am7 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "eidyh0q"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "bq2ctc4"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "psb56cu"
+        },
+        {
+          "s": 5,
+          "f": 0,
+          "id": "h24fxfu"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "1",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "jv76ncd": {
+      "id": "jv76ncd",
+      "groupId": "oiquj4g",
+      "name": "F m7 (Forme Dm7 - Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 3,
+          "f": 2,
+          "id": "qxfkm59"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "3alwc8n"
+        },
+        {
+          "s": 5,
+          "f": 1,
+          "id": "begdldj"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "1",
+        "3": "3",
+        "4": "2",
+        "5": "2"
+      },
+      "texts": []
+    },
+    "depaean": {
+      "id": "depaean",
+      "groupId": "n3kwgsv",
+      "name": "G m(maj7) (Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 1,
+          "id": "2yl9nhg"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "hz17pvd"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "6szqq3y"
+        }
+      ],
+      "fingerings": {
+        "0": "2",
+        "1": "X",
+        "2": "3",
+        "3": "1",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "noy4dnw": {
+      "id": "noy4dnw",
+      "groupId": "n3kwgsv",
+      "name": "C m(maj7) (Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "etgpqyc"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "rb79qpo"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "i4izjnp"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "4",
+        "3": "2",
+        "4": "3",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "w95v1nr": {
+      "id": "w95v1nr",
+      "groupId": "ruz38xv",
+      "name": "G maj7 sus4 (Corde 6)",
+      "startFret": 2,
+      "root": {
+        "s": 0,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "t7dg7b9",
+          "s": 2,
+          "f": 2
+        },
+        {
+          "id": "kec7or8",
+          "s": 3,
+          "f": 3
+        },
+        {
+          "id": "hlanf7c",
+          "s": 4,
+          "f": 1
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "X",
+        "2": "2",
+        "3": "4",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "ur5h2p1": {
+      "id": "ur5h2p1",
+      "groupId": "ruz38xv",
+      "name": "C maj7 sus4 (Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "20jkb3j"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "qgiqg52"
+        },
+        {
+          "s": 4,
+          "f": 3,
+          "id": "weov3i1"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "2",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "l2m6x0b": {
+      "id": "l2m6x0b",
+      "groupId": "ruz38xv",
+      "name": "C Maj7Sus2 (Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "8xqr7ef"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "j77qzd5"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "t1uhaiv"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "4",
+        "3": "3",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "8nf2ca0": {
+      "id": "8nf2ca0",
+      "groupId": "btmuk4p",
+      "name": "C sus2 (Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "xe12p06"
+        },
+        {
+          "s": 3,
+          "f": 2,
+          "id": "15a87lg"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "c3l9wbw"
+        },
+        {
+          "s": 5,
+          "f": 0,
+          "id": "0emnsn2"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "1",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "sus2_c6": {
+      "id": "sus2_c6",
+      "groupId": "btmuk4p",
+      "name": "G sus2 (Fermé - Corde 6)",
+      "startFret": 2,
+      "root": {
+        "s": 0,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "wj64cu5",
+          "s": 1,
+          "f": 3
+        },
+        {
+          "id": "81v30jw",
+          "s": 2,
+          "f": 3
+        },
+        {
+          "id": "8izd1rg",
+          "s": 3,
+          "f": 0
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "3",
+        "2": "4",
+        "3": "1",
+        "4": "X",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "rtd6wne": {
+      "id": "rtd6wne",
+      "groupId": "btmuk4p",
+      "name": "G sus4 (Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 1,
+          "f": 2,
+          "id": "owivld5"
+        },
+        {
+          "s": 2,
+          "f": 2,
+          "id": "vzdte6u"
+        },
+        {
+          "s": 3,
+          "f": 2,
+          "id": "adydn1e"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "bp4rhex"
+        },
+        {
+          "s": 5,
+          "f": 0,
+          "id": "msp9g9s"
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "3",
+        "2": "4",
+        "3": "2",
+        "4": "1",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "sus4_c4": {
+      "id": "sus4_c4",
+      "groupId": "btmuk4p",
+      "name": "F sus4 (Fermé - Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 3,
+          "f": 2,
+          "id": "sus4_c4_n1"
+        },
+        {
+          "s": 4,
+          "f": 3,
+          "id": "sus4_c4_n2"
+        },
+        {
+          "s": 5,
+          "f": 3,
+          "id": "sus4_c4_n3"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "1",
+        "3": "2",
+        "4": "4",
+        "5": "3"
+      },
+      "texts": []
+    },
+    "y6gaat2": {
+      "id": "y6gaat2",
+      "groupId": "btmuk4p",
+      "name": "C7 sus b9 (Flamenco / Jazz - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "c0ccttz"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "to13z7m"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "rwsl6lk"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "3",
+        "2": "1",
+        "3": "2",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "ufu1ky3": {
+      "id": "ufu1ky3",
+      "groupId": "btmuk4p",
+      "name": "C9 sus2 (Dominante Sus 9 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "vamz2ek"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "x3mg0mz"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "k59ss2q"
+        },
+        {
+          "s": 5,
+          "f": 0,
+          "id": "kq73lcs"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "1",
+        "4": "1",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "c_add9_c5_st5": {
+      "id": "c_add9_c5_st5",
+      "groupId": "add_chords_grp",
+      "name": "C add9 (Cordes 5 à 2 - Corde 5)",
+      "startFret": 2,
+      "root": {
+        "s": 1,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "94ivcyc",
+          "s": 2,
+          "f": 0
+        },
+        {
+          "id": "w7f7ql8",
+          "s": 3,
+          "f": 3
+        },
+        {
+          "id": "eohlqkb",
+          "s": 4,
+          "f": 1
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "3",
+        "4": "3",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "c_add11_c5_st5": {
+      "id": "c_add11_c5_st5",
+      "groupId": "add_chords_grp",
+      "name": "D add11 (Cordes 5 à 2 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 2
+      },
+      "notes": [
+        {
+          "id": "w52lwxr",
+          "s": 2,
+          "f": 2
+        },
+        {
+          "id": "cf68q5i",
+          "s": 3,
+          "f": 4
+        },
+        {
+          "id": "dur0ge8",
+          "s": 4,
+          "f": 4
+        },
+        {
+          "id": "fmg8khm",
+          "s": 5,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "4",
+        "3": "4",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "v0yw85z": {
+      "id": "v0yw85z",
+      "groupId": "5i28ttv",
+      "name": "C9 (Dominante 9 - Corde 5)",
+      "startFret": 2,
+      "root": {
+        "s": 1,
+        "f": 1
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "s358qzk"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "29fr7zy"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "vvmjf7l"
+        },
+        {
+          "s": 5,
+          "f": 1,
+          "id": "n2pcyfq"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "1",
+        "3": "3",
+        "4": "3",
+        "5": "3"
+      },
+      "texts": []
+    },
+    "ro39occ": {
+      "id": "ro39occ",
+      "groupId": "5i28ttv",
+      "name": "C m9 (Mineur 9 - Corde 5)",
+      "startFret": 1,
+      "root": {
+        "s": 1,
+        "f": 2
+      },
+      "notes": [
+        {
+          "id": "8sj0fbx",
+          "s": 2,
+          "f": 0
+        },
+        {
+          "id": "zxys7bq",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "wri6d5l",
+          "s": 4,
+          "f": 2
+        },
+        {
+          "id": "dse3f66",
+          "s": 5,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "1",
+        "3": "3",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "0d8pwji": {
+      "id": "0d8pwji",
+      "groupId": "5i28ttv",
+      "name": "C m11 (Mineur 11 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "tjmxwvx"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "kps3sp7"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "wqaxu3o"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "1",
+        "3": "1",
+        "4": "3",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "obbnzzm": {
+      "id": "obbnzzm",
+      "groupId": "oiquj4g",
+      "name": "G maj7 (#11 / 11e - Corde 6)",
+      "startFret": 2,
+      "root": {
+        "s": 0,
+        "f": 1
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "dxnn1e5"
+        },
+        {
+          "s": 3,
+          "f": 2,
+          "id": "180tc19"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "vltf9li"
+        }
+      ],
+      "fingerings": {
+        "0": "2",
+        "1": "X",
+        "2": "3",
+        "3": "4",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "maj11_c5": {
+      "id": "maj11_c5",
+      "groupId": "5i28ttv",
+      "name": "C maj11 (ou Cmaj9sus4 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "maj11_c5_n1"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "maj11_c5_n2"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "maj11_c5_n3"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "1",
+        "3": "3",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "dom11_c5": {
+      "id": "dom11_c5",
+      "groupId": "5i28ttv",
+      "name": "C11 (Dominante 11 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "dom11_c5_n1"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "dom11_c5_n2"
+        },
+        {
+          "id": "ibgof9a",
+          "s": 4,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "1",
+        "3": "1",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "obz6wwf": {
+      "id": "obz6wwf",
+      "groupId": "5i28ttv",
+      "name": "G13 (Dominante 13 - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "nsr3250"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "t2nq690"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "o2ojttm"
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "X",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "c13_c5": {
+      "id": "c13_c5",
+      "groupId": "5i28ttv",
+      "name": "C13 (Dominante 13 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "c13_c5_n1"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "c13_c5_n2"
+        },
+        {
+          "s": 5,
+          "f": 2,
+          "id": "c13_c5_n4"
+        },
+        {
+          "id": "o9i24g7",
+          "s": 4,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "3",
+        "3": "1",
+        "4": "4",
+        "5": "4"
+      },
+      "texts": []
+    },
+    "0emynyg": {
+      "id": "0emynyg",
+      "groupId": "5i28ttv",
+      "name": "C maj13 (Majeur 13 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "grudi38"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "1s9n8d6"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "tgd56o8"
+        },
+        {
+          "s": 5,
+          "f": 2,
+          "id": "787yphz"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "2",
+        "4": "4",
+        "5": "4"
+      },
+      "texts": []
+    },
+    "61jkmd1": {
+      "id": "61jkmd1",
+      "groupId": "5i28ttv",
+      "name": "G maj9 (13 - Extension Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 1,
+          "id": "d85ees8"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "aihod0n"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "qg5ok6y"
+        },
+        {
+          "s": 5,
+          "f": 2,
+          "id": "w1cmcvt"
+        }
+      ],
+      "fingerings": {
+        "0": "2",
+        "1": "X",
+        "2": "3",
+        "3": "1",
+        "4": "4",
+        "5": "4"
+      },
+      "texts": []
+    },
+    "min13_c6": {
+      "id": "min13_c6",
+      "groupId": "5i28ttv",
+      "name": "G m13 (Mineur 13 - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "min13_c6_n1"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "min13_c6_n2"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "min13_c6_n3"
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "X",
+        "2": "1",
+        "3": "1",
+        "4": "3",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "min13_c5": {
+      "id": "min13_c5",
+      "groupId": "5i28ttv",
+      "name": "C m13 (Mineur 13 - Corde 5)",
+      "startFret": 1,
+      "root": {
+        "s": 1,
+        "f": 2
+      },
+      "notes": [
+        {
+          "id": "ac5yct1",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "doiqckl",
+          "s": 4,
+          "f": 2
+        },
+        {
+          "id": "cizc2g5",
+          "s": 5,
+          "f": 4
+        },
+        {
+          "id": "vvkyplr",
+          "s": 2,
+          "f": 0
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "1",
+        "3": "1",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "c_maj13_c5_st5": {
+      "id": "c_maj13_c5_st5",
+      "groupId": "5i28ttv",
+      "name": "C maj13 (Cordes 5 à 2 - Corde 5)",
+      "startFret": 2,
+      "root": {
+        "s": 1,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "4dhkmkn",
+          "s": 2,
+          "f": 0
+        },
+        {
+          "id": "d1fkj0b",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "16s0mqn",
+          "s": 0,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "3",
+        "3": "4",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "c3bd1u5": {
+      "id": "c3bd1u5",
+      "groupId": "kl7seow",
+      "name": "G Augmenté (G+ / aug - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "hwsq3rj"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "7385v4a"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "m82i3la"
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "X",
+        "2": "4",
+        "3": "2",
+        "4": "2",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "fyxn3k5": {
+      "id": "fyxn3k5",
+      "groupId": "kl7seow",
+      "name": "C Augmenté (C+ / aug - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 3,
+          "f": 2,
+          "id": "tzhfkb8"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "yaf37qw"
+        },
+        {
+          "id": "8wfc4si",
+          "s": 2,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "dim_triad_c5": {
+      "id": "dim_triad_c5",
+      "groupId": "kl7seow",
+      "name": "C Diminué Triade (Fermé - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 1,
+          "id": "dim_t_n1"
+        },
+        {
+          "s": 3,
+          "f": 2,
+          "id": "dim_t_n2"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "1",
+        "3": "3",
+        "4": "X",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "e78o2ho": {
+      "id": "e78o2ho",
+      "groupId": "kl7seow",
+      "name": "C dim7 (Corde 5)",
+      "startFret": 2,
+      "root": {
+        "s": 1,
+        "f": 1
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "skbqci6"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "ih9ij11"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "ojgp4ol"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "4",
+        "3": "1",
+        "4": "3",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "pmi38zl": {
+      "id": "pmi38zl",
+      "groupId": "kl7seow",
+      "name": "G dim7 (Corde 6)",
+      "startFret": 2,
+      "root": {
+        "s": 0,
+        "f": 1
+      },
+      "notes": [
+        {
+          "s": 4,
+          "f": 0,
+          "id": "cjvjo5u"
+        },
+        {
+          "id": "0690mo5",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "09n6jw4",
+          "s": 2,
+          "f": 0
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "X",
+        "2": "2",
+        "3": "1",
+        "4": "3",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "nt9zzgf": {
+      "id": "nt9zzgf",
+      "groupId": "kl7seow",
+      "name": "C dim7 b13 (Diminué 7 bémol 13 - Corde 5)",
+      "startFret": 2,
+      "root": {
+        "s": 1,
+        "f": 1
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "2efipxw"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "rkk52or"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "9djve3a"
+        },
+        {
+          "s": 5,
+          "f": 2,
+          "id": "d2mij4w"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "3",
+        "3": "1",
+        "4": "4",
+        "5": "4"
+      },
+      "texts": []
+    },
+    "twmsk7m": {
+      "id": "twmsk7m",
+      "groupId": "5i0hyiz",
+      "name": "B m7b5 (Demi-diminué Corde 5)",
+      "startFret": 2,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 1,
+          "id": "vrlthz5"
+        },
+        {
+          "s": 3,
+          "f": 0,
+          "id": "pxvy5ui"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "40w0muz"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "2",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "tdw16h2": {
+      "id": "tdw16h2",
+      "groupId": "5i0hyiz",
+      "name": "G m7b5 (Demi-diminué Corde 6)",
+      "startFret": 2,
+      "root": {
+        "s": 0,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "uh7dzls",
+          "s": 2,
+          "f": 1
+        },
+        {
+          "id": "3pflle7",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "mk2mkiv",
+          "s": 4,
+          "f": 0
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "X",
+        "2": "2",
+        "3": "3",
+        "4": "0",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "nerwvae": {
+      "id": "nerwvae",
+      "groupId": "5i0hyiz",
+      "name": "D m7b5 (Demi-diminué Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 4,
+          "f": 1,
+          "id": "hqnpoed"
+        },
+        {
+          "s": 5,
+          "f": 1,
+          "id": "x7okat6"
+        },
+        {
+          "id": "crk9yb2",
+          "s": 3,
+          "f": 1
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "1",
+        "3": "3",
+        "4": "2",
+        "5": "2"
+      },
+      "texts": []
+    },
+    "3i1hpb7": {
+      "id": "3i1hpb7",
+      "groupId": "ty80wtk",
+      "name": "C7b9 (Dominante b9 - Corde 5)",
+      "startFret": 2,
+      "root": {
+        "s": 1,
+        "f": 1
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "hc9o4cm"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "2zsvuq5"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "ma6c61z"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "1",
+        "3": "3",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "en1xr7f": {
+      "id": "en1xr7f",
+      "groupId": "ty80wtk",
+      "name": "C7#9 (Accord Hendrix - Corde 5)",
+      "startFret": 2,
+      "root": {
+        "s": 1,
+        "f": 1
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "p9es0za"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "17rw6hc"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "xen9126"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "1",
+        "3": "3",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "ssuz64m": {
+      "id": "ssuz64m",
+      "groupId": "ty80wtk",
+      "name": "G7#5 (Dominante #5 - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "b8hxwxo"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "buhamhp"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "8wbtfzb"
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "X",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "aok6fqf": {
+      "id": "aok6fqf",
+      "groupId": "ty80wtk",
+      "name": "G7b5 (Dominante b5 - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "dbpa0zd"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "pfm6nd3"
+        },
+        {
+          "s": 4,
+          "f": 0,
+          "id": "rk2q1iv"
+        }
+      ],
+      "fingerings": {
+        "0": "2",
+        "1": "X",
+        "2": "1",
+        "3": "3",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "dom7b13_c6": {
+      "id": "dom7b13_c6",
+      "groupId": "ty80wtk",
+      "name": "G7b13 (Dominante b13 - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 0,
+          "id": "dom7b13_c6_n1"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "dom7b13_c6_n2"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "id": "dom7b13_c6_n3"
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "X",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "abveui4": {
+      "id": "abveui4",
+      "groupId": "ty80wtk",
+      "name": "C7alt (Super-locrien - Corde 5)",
+      "startFret": 2,
+      "root": {
+        "s": 1,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "8z087mf",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "gbjqft1",
+          "s": 2,
+          "f": 0
+        },
+        {
+          "id": "eru5rcw",
+          "s": 5,
+          "f": 2
+        },
+        {
+          "id": "x0fu4tn",
+          "s": 4,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "3",
+        "3": "1",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "c_7b5_c5_st5": {
+      "id": "c_7b5_c5_st5",
+      "groupId": "ty80wtk",
+      "name": "D#7b5 (Cordes 5 à 2 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 3
+      },
+      "notes": [
+        {
+          "s": 1,
+          "f": 3,
+          "id": "c_7b5_c5_st5_n1"
+        },
+        {
+          "s": 2,
+          "f": 4,
+          "id": "c_7b5_c5_st5_n2"
+        },
+        {
+          "id": "jcbw6mw",
+          "s": 3,
+          "f": 3
+        },
+        {
+          "id": "kh3bw5i",
+          "s": 4,
+          "f": 5
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "4",
+        "3": "3",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "c_7b9_c5_st5": {
+      "id": "c_7b9_c5_st5",
+      "groupId": "ty80wtk",
+      "name": "D#7b9 (Cordes 5 à 2 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 3
+      },
+      "notes": [
+        {
+          "s": 1,
+          "f": 3,
+          "id": "c_7b9_c5_st5_n1"
+        },
+        {
+          "s": 3,
+          "f": 3,
+          "id": "c_7b9_c5_st5_n3"
+        },
+        {
+          "s": 4,
+          "f": 2,
+          "id": "c_7b9_c5_st5_n4"
+        },
+        {
+          "id": "zvqgnxk",
+          "s": 2,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "2",
+        "3": "2",
+        "4": "1",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "c_7sh11_c5_st5": {
+      "id": "c_7sh11_c5_st5",
+      "groupId": "ty80wtk",
+      "name": "D#7#11 (Cordes 5 à 2 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 3
+      },
+      "notes": [
+        {
+          "s": 1,
+          "f": 3,
+          "id": "c_7sh11_c5_st5_n1"
+        },
+        {
+          "id": "l8zxtga",
+          "s": 5,
+          "f": 4
+        },
+        {
+          "id": "z7znypc",
+          "s": 3,
+          "f": 3
+        },
+        {
+          "id": "dppmirq",
+          "s": 2,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "2",
+        "3": "2",
+        "4": "X",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "k19jwv8": {
+      "id": "k19jwv8",
+      "groupId": "j9zqxyr",
+      "name": "Power Chord - Racine Corde 6 (ex: G5)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 1,
+          "f": 2,
+          "id": "l8vl2h3"
+        },
+        {
+          "s": 2,
+          "f": 2,
+          "id": "4jxx68s"
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "3",
+        "2": "4",
+        "3": "X",
+        "4": "X",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "mtkp6jg": {
+      "id": "mtkp6jg",
+      "groupId": "j9zqxyr",
+      "name": "Power Chord - Racine Corde 5 (ex: C5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 2,
+          "f": 2,
+          "id": "6gfsr6p"
+        },
+        {
+          "s": 3,
+          "f": 2,
+          "id": "r180jfu"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "X",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "lw0xwmx": {
+      "id": "lw0xwmx",
+      "groupId": "j9zqxyr",
+      "name": "Power Chord - Racine Corde 4 (f: F5)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 3,
+          "f": 2,
+          "id": "4m1yt2u"
+        },
+        {
+          "s": 4,
+          "f": 3,
+          "id": "mz5a4v8"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "1",
+        "3": "3",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "3r089dd": {
+      "id": "3r089dd",
+      "groupId": "j9zqxyr",
+      "name": "A/C# (Fermé - Basse F#)",
+      "startFret": 5,
+      "root": {
+        "s": 2,
+        "f": 2
+      },
+      "notes": [
+        {
+          "id": "7wekz96",
+          "s": 0,
+          "f": 4
+        },
+        {
+          "id": "hgz2v28",
+          "s": 3,
+          "f": 4
+        },
+        {
+          "id": "x6g8emb",
+          "s": 4,
+          "f": 4
+        },
+        {
+          "id": "ayo9w3c",
+          "s": 5,
+          "f": 4
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "X",
+        "2": "4",
+        "3": "1",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "c_cased_7": {
+      "id": "c_cased_7",
+      "groupId": "oiquj4g",
+      "name": "C7 (Forme C - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 3
+      },
+      "notes": [
+        {
+          "s": 1,
+          "f": 3,
+          "id": "cc7_n1"
+        },
+        {
+          "s": 2,
+          "f": 2,
+          "id": "cc7_n2"
+        },
+        {
+          "s": 3,
+          "f": 3,
+          "id": "cc7_n3"
+        },
+        {
+          "s": 4,
+          "f": 5,
+          "id": "cc7_n4"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "2",
+        "2": "1",
+        "3": "3",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "c_cased_m7": {
+      "id": "c_cased_m7",
+      "groupId": "oiquj4g",
+      "name": "C 7 (Forme C - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 3
+      },
+      "notes": [
+        {
+          "s": 1,
+          "f": 3,
+          "id": "ccm7_n1"
+        },
+        {
+          "s": 3,
+          "f": 3,
+          "id": "ccm7_n3"
+        },
+        {
+          "s": 4,
+          "f": 5,
+          "id": "ccm7_n4"
+        },
+        {
+          "id": "0mr38jm",
+          "s": 2,
+          "f": 5
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "2",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "e_cased_7": {
+      "id": "e_cased_7",
+      "groupId": "oiquj4g",
+      "name": "F7 (Forme E - Corde 6)",
+      "startFret": 0,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "s": 0,
+          "f": 0,
+          "id": "ec7_n1"
+        },
+        {
+          "s": 1,
+          "f": 2,
+          "id": "ec7_n2"
+        },
+        {
+          "s": 2,
+          "f": 0,
+          "id": "ec7_n3"
+        },
+        {
+          "s": 3,
+          "f": 1,
+          "id": "ec7_n4"
+        },
+        {
+          "s": 5,
+          "f": 0,
+          "id": "ec7_n6"
+        },
+        {
+          "id": "klnqk66",
+          "s": 4,
+          "f": 0
+        }
+      ],
+      "fingerings": {
+        "0": "1",
+        "1": "3",
+        "2": "X",
+        "3": "1",
+        "4": "",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "c_cased_maj7sus2": {
+      "id": "c_cased_maj7sus2",
+      "groupId": "ruz38xv",
+      "name": "C maj7sus4 (Forme C - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 3
+      },
+      "notes": [
+        {
+          "s": 1,
+          "f": 3,
+          "id": "ccm7sus2_n1"
+        },
+        {
+          "s": 2,
+          "f": 3,
+          "id": "ccm7sus2_n2"
+        },
+        {
+          "s": 3,
+          "f": 4,
+          "id": "ccm7sus2_n3"
+        },
+        {
+          "s": 4,
+          "f": 5,
+          "id": "ccm7sus2_n4"
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "1",
+        "3": "2",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "c_cased_sus2": {
+      "id": "c_cased_sus2",
+      "groupId": "btmuk4p",
+      "name": "C sus2 (Forme A - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "mtxnc8b",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "r4bccb3",
+          "s": 4,
+          "f": 0
+        },
+        {
+          "id": "yo92rds",
+          "s": 2,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "1",
+        "3": "3",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "c_cased_add9": {
+      "id": "c_cased_add9",
+      "groupId": "add_chords_grp",
+      "name": "C add9 (Forme C - Corde 5)",
+      "startFret": 2,
+      "root": {
+        "s": 1,
+        "f": 3
+      },
+      "notes": [
+        {
+          "id": "nlv7373",
+          "s": 2,
+          "f": 2
+        },
+        {
+          "id": "9p70mt7",
+          "s": 3,
+          "f": 0
+        },
+        {
+          "id": "28j5vtt",
+          "s": 4,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "1",
+        "3": "2",
+        "4": "4",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "hldx8vo": {
+      "id": "hldx8vo",
+      "groupId": "kl7seow",
+      "name": "D aug (Cordes 5 à 2 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 2
+      },
+      "notes": [
+        {
+          "id": "y5wy79d",
+          "s": 3,
+          "f": 4
+        },
+        {
+          "id": "2eazlor",
+          "s": 2,
+          "f": 5
+        },
+        {
+          "id": "lq3vn7c",
+          "s": 4,
+          "f": 4
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "ljkysjg": {
+      "id": "ljkysjg",
+      "groupId": "ruz38xv",
+      "name": "G Maj7Sus4 (Corde 4 à 1 - Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 2
+      },
+      "notes": [
+        {
+          "id": "jg33368",
+          "s": 3,
+          "f": 4
+        },
+        {
+          "id": "g49t7sj",
+          "s": 4,
+          "f": 4
+        },
+        {
+          "id": "5muboz8",
+          "s": 5,
+          "f": 5
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "97ch496": {
+      "id": "97ch496",
+      "groupId": "btmuk4p",
+      "name": "G 7Sus4 (Corde 4 à 1 - Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 2
+      },
+      "notes": [
+        {
+          "id": "4lygyok",
+          "s": 4,
+          "f": 3
+        },
+        {
+          "id": "q5p2g53",
+          "s": 3,
+          "f": 4
+        },
+        {
+          "id": "93ycx0x",
+          "s": 5,
+          "f": 5
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "yxjwee5": {
+      "id": "yxjwee5",
+      "groupId": "alp5zah",
+      "name": "Cm6 (Corde 5)",
+      "startFret": 1,
+      "root": {
+        "s": 1,
+        "f": 2
+      },
+      "notes": [
+        {
+          "id": "9ti2j3w",
+          "s": 2,
+          "f": 0
+        },
+        {
+          "id": "c13vuue",
+          "s": 3,
+          "f": 1
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "X",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "twx7h7j": {
+      "id": "twx7h7j",
+      "groupId": "alp5zah",
+      "name": "Cm6 (Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 2
+      },
+      "notes": [
+        {
+          "id": "innqru5",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "jwnhi87",
+          "s": 5,
+          "f": 2
+        },
+        {
+          "id": "zcpdohg",
+          "s": 4,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "X",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "vzw1ydn": {
+      "id": "vzw1ydn",
+      "groupId": "alp5zah",
+      "name": "Cm6 (Corde 4)",
+      "startFret": 9,
+      "root": {
+        "s": 2,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "qbi75i6",
+          "s": 4,
+          "f": 1
+        },
+        {
+          "id": "uyrm6qn",
+          "s": 5,
+          "f": 2
+        },
+        {
+          "id": "vkj3wt4",
+          "s": 3,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "a9bgb34": {
+      "id": "a9bgb34",
+      "groupId": "ruz38xv",
+      "name": "C Maj7sus4 (Forme A - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "f6pfunx",
+          "s": 4,
+          "f": 0
+        },
+        {
+          "id": "o94po05",
+          "s": 5,
+          "f": 0
+        },
+        {
+          "id": "rkx2qob",
+          "s": 2,
+          "f": 0
+        },
+        {
+          "id": "s6i5oo3",
+          "s": 3,
+          "f": 1
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "u3p5fvn": {
+      "id": "u3p5fvn",
+      "groupId": "ruz38xv",
+      "name": "C Maj7Sus4 (Forme A - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "rddswav",
+          "s": 2,
+          "f": 2
+        },
+        {
+          "id": "ljv5auo",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "nzo2z16",
+          "s": 4,
+          "f": 3
+        },
+        {
+          "id": "2ncm6a7",
+          "s": 5,
+          "f": 4
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "s2utcs6": {
+      "id": "s2utcs6",
+      "groupId": "ruz38xv",
+      "name": "C Maj7Sus2 (Forme G - Corde 6)",
+      "startFret": 6,
+      "root": {
+        "s": 0,
+        "f": 2
+      },
+      "notes": [
+        {
+          "id": "pnbdvhs",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "q1ig08x",
+          "s": 4,
+          "f": 2
+        },
+        {
+          "id": "72g9gf3",
+          "s": 2,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "vu5gtgx": {
+      "id": "vu5gtgx",
+      "groupId": "n3kwgsv",
+      "name": "Cm(Maj7) (Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "dyyiazt",
+          "s": 5,
+          "f": 0
+        },
+        {
+          "id": "ure77t4",
+          "s": 4,
+          "f": 1
+        },
+        {
+          "id": "a7qicmu",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "yp22gpj",
+          "s": 2,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "4g4btg9": {
+      "id": "4g4btg9",
+      "groupId": "n3kwgsv",
+      "name": "Cm(Maj7) (Corde 4)",
+      "startFret": 9,
+      "root": {
+        "s": 2,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "yfy6qkb",
+          "s": 5,
+          "f": 2
+        },
+        {
+          "id": "1jz59cb",
+          "s": 4,
+          "f": 3
+        },
+        {
+          "id": "mbwn9y4",
+          "s": 3,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "rllh04t": {
+      "id": "rllh04t",
+      "groupId": "alp5zah",
+      "name": "G#m6 (Corde 4 à 2 - Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 3
+      },
+      "notes": [
+        {
+          "id": "26u79dk",
+          "s": 4,
+          "f": 3
+        },
+        {
+          "id": "5is3g36",
+          "s": 3,
+          "f": 1
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "7zfcgwq": {
+      "id": "7zfcgwq",
+      "groupId": "ruz38xv",
+      "name": "G#m7 (Corde 4 à 2 - Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 3
+      },
+      "notes": [
+        {
+          "id": "6x3ngiv",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "i593hnk",
+          "s": 4,
+          "f": 4
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "magub62": {
+      "id": "magub62",
+      "groupId": "5i28ttv",
+      "name": "Cmaj#11 (Corde 6)",
+      "startFret": 8,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "yyent7o",
+          "s": 2,
+          "f": 1
+        },
+        {
+          "id": "magz93c",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "l2b2mbw",
+          "s": 5,
+          "f": 2
+        },
+        {
+          "id": "8r37q27",
+          "s": 4,
+          "f": 0
+        },
+        {
+          "id": "2p2kieq",
+          "s": 1,
+          "f": 1
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "awpzo41": {
+      "id": "awpzo41",
+      "groupId": "5i28ttv",
+      "name": "C11 (Corde 6)",
+      "startFret": 7,
+      "root": {
+        "s": 0,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "x1eikyo",
+          "s": 1,
+          "f": 1
+        },
+        {
+          "id": "ewtiuoe",
+          "s": 2,
+          "f": 1
+        },
+        {
+          "id": "9afwmva",
+          "s": 4,
+          "f": 1
+        },
+        {
+          "id": "efda4a7",
+          "s": 5,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "X",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "2ezho7r": {
+      "id": "2ezho7r",
+      "groupId": "5i28ttv",
+      "name": "Cm11 (Corde 6)",
+      "startFret": 7,
+      "root": {
+        "s": 0,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "uf357tf",
+          "s": 1,
+          "f": 1
+        },
+        {
+          "id": "covwsh9",
+          "s": 2,
+          "f": 1
+        },
+        {
+          "id": "pl6ga61",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "39xu5ce",
+          "s": 4,
+          "f": 1
+        },
+        {
+          "id": "qb11bbp",
+          "s": 5,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "8oxiio5": {
+      "id": "8oxiio5",
+      "groupId": "5i28ttv",
+      "name": "G#9 (Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 3
+      },
+      "notes": [
+        {
+          "id": "hk2vfks",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "7dfzvp9",
+          "s": 5,
+          "f": 3
+        },
+        {
+          "id": "0bj255g",
+          "s": 4,
+          "f": 4
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "h2dsy3k": {
+      "id": "h2dsy3k",
+      "groupId": "5i28ttv",
+      "name": "G#min9 (Corde 4)",
+      "startFret": 3,
+      "root": {
+        "s": 2,
+        "f": 3
+      },
+      "notes": [
+        {
+          "id": "uzjveks",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "nxom9vl",
+          "s": 5,
+          "f": 3
+        },
+        {
+          "id": "748vt73",
+          "s": 4,
+          "f": 4
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "6a3gehh": {
+      "id": "6a3gehh",
+      "groupId": "5i28ttv",
+      "name": "C maj9 (Majeur 9 - Corde 5)",
+      "startFret": 2,
+      "root": {
+        "s": 1,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "ujhp9l0",
+          "s": 2,
+          "f": 0
+        },
+        {
+          "id": "3bu2ocq",
+          "s": 4,
+          "f": 1
+        },
+        {
+          "id": "s62jyla",
+          "s": 3,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "po0ddax": {
+      "id": "po0ddax",
+      "groupId": "btmuk4p",
+      "name": "C sus4 (Corde 4)",
+      "startFret": 7,
+      "root": {
+        "s": 2,
+        "f": 3
+      },
+      "notes": [
+        {
+          "id": "ix5s396",
+          "s": 3,
+          "f": 3
+        },
+        {
+          "id": "hgxl6ze",
+          "s": 4,
+          "f": 1
+        },
+        {
+          "id": "vemy8t8",
+          "s": 5,
+          "f": 1
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "nfir2jp": {
+      "id": "nfir2jp",
+      "groupId": "btmuk4p",
+      "name": "C sus2 (Corde 4)",
+      "startFret": 7,
+      "root": {
+        "s": 2,
+        "f": 3
+      },
+      "notes": [
+        {
+          "id": "0x441sj",
+          "s": 4,
+          "f": 1
+        },
+        {
+          "id": "1s6ya4q",
+          "s": 5,
+          "f": 1
+        },
+        {
+          "id": "9lkhpco",
+          "s": 3,
+          "f": 0
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "twbhjth": {
+      "id": "twbhjth",
+      "groupId": "add_chords_grp",
+      "name": "A add9 (Corde 2)",
+      "startFret": 6,
+      "root": {
+        "s": 4,
+        "f": 4
+      },
+      "notes": [
+        {
+          "id": "wny1i1j",
+          "s": 5,
+          "f": 3
+        },
+        {
+          "id": "6b3s8ea",
+          "s": 3,
+          "f": 3
+        },
+        {
+          "id": "a9pkzxy",
+          "s": 2,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "gl7wh0r": {
+      "id": "gl7wh0r",
+      "groupId": "ruz38xv",
+      "name": "C 7Sus2 (Corde 4)",
+      "startFret": 9,
+      "root": {
+        "s": 2,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "ikwghjt",
+          "s": 5,
+          "f": 1
+        },
+        {
+          "id": "k0acq2b",
+          "s": 4,
+          "f": 2
+        },
+        {
+          "id": "89e406y",
+          "s": 3,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "wnkavlv": {
+      "id": "wnkavlv",
+      "groupId": "5i28ttv",
+      "name": "D 9#11 (Corde 6)",
+      "startFret": 9,
+      "root": {
+        "s": 0,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "491tvvb",
+          "s": 2,
+          "f": 1
+        },
+        {
+          "id": "uhvnnzy",
+          "s": 3,
+          "f": 0
+        },
+        {
+          "id": "opkgs5n",
+          "s": 4,
+          "f": 0
+        },
+        {
+          "id": "solfvo2",
+          "s": 1,
+          "f": 0
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "54bi7e9": {
+      "id": "54bi7e9",
+      "groupId": "5i28ttv",
+      "name": "C 13b9 (Corde 6)",
+      "startFret": 7,
+      "root": {
+        "s": 0,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "suq0xl3",
+          "s": 2,
+          "f": 1
+        },
+        {
+          "id": "nehymlw",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "uczg9dv",
+          "s": 4,
+          "f": 3
+        },
+        {
+          "id": "ih2fjfk",
+          "s": 5,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "wr40313": {
+      "id": "wr40313",
+      "groupId": "alp5zah",
+      "name": "G 6 (Voicing - Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "nrlilfm",
+          "s": 1,
+          "f": 2
+        },
+        {
+          "id": "cnuyfqq",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "wq9qise",
+          "s": 4,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "X",
+        "3": "4",
+        "4": "2",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "w6xwtjo": {
+      "id": "w6xwtjo",
+      "groupId": "oiquj4g",
+      "name": "F 7 (Corde 6)",
+      "startFret": 2,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "x07wlz4",
+          "s": 1,
+          "f": 2
+        },
+        {
+          "id": "c4yp6hf",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "75s0hso",
+          "s": 4,
+          "f": 3
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "X",
+        "3": "4",
+        "4": "2",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "ngqnutw": {
+      "id": "ngqnutw",
+      "groupId": "alp5zah",
+      "name": "E 6 (Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 4
+      },
+      "notes": [
+        {
+          "id": "x447ts9",
+          "s": 2,
+          "f": 3
+        },
+        {
+          "id": "w4zlxi8",
+          "s": 3,
+          "f": 3
+        },
+        {
+          "id": "lehd9rg",
+          "s": 4,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "ti1ults": {
+      "id": "ti1ults",
+      "groupId": "5i28ttv",
+      "name": "C# 7#9b13 (Corde 4)",
+      "startFret": 10,
+      "root": {
+        "s": 2,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "ed7j2il",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "qltsvkm",
+          "s": 5,
+          "f": 2
+        },
+        {
+          "id": "w41clvx",
+          "s": 4,
+          "f": 0
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "7skq4lk": {
+      "id": "7skq4lk",
+      "groupId": "5i28ttv",
+      "name": "A min11 (Corde 4)",
+      "startFret": 5,
+      "root": {
+        "s": 2,
+        "f": 2
+      },
+      "notes": [
+        {
+          "id": "f43oxq0",
+          "s": 3,
+          "f": 0
+        },
+        {
+          "id": "4qud81x",
+          "s": 4,
+          "f": 3
+        },
+        {
+          "id": "tjm0yn9",
+          "s": 5,
+          "f": 4
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "una2e8j": {
+      "id": "una2e8j",
+      "groupId": "5i28ttv",
+      "name": "E 11 (Corde 1)",
+      "startFret": 8,
+      "root": {
+        "s": 5,
+        "f": 4
+      },
+      "notes": [
+        {
+          "id": "qw866tq",
+          "s": 2,
+          "f": 4
+        },
+        {
+          "id": "7d2uaoz",
+          "s": 3,
+          "f": 5
+        },
+        {
+          "id": "mov1y8p",
+          "s": 4,
+          "f": 4
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "22mygr5": {
+      "id": "22mygr5",
+      "groupId": "alp5zah",
+      "name": "C# 69 (Corde 4)",
+      "startFret": 10,
+      "root": {
+        "s": 2,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "x3djpmp",
+          "s": 4,
+          "f": 1
+        },
+        {
+          "id": "wqvq7zm",
+          "s": 5,
+          "f": 1
+        },
+        {
+          "id": "vs9dqe6",
+          "s": 3,
+          "f": 0
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "q0mjktd": {
+      "id": "q0mjktd",
+      "groupId": "oiquj4g",
+      "name": "A# 7b9 (Corde 4)",
+      "startFret": 8,
+      "root": {
+        "s": 2,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "nux8r5n",
+          "s": 4,
+          "f": 0
+        },
+        {
+          "id": "e4zw0wb",
+          "s": 3,
+          "f": 1
+        },
+        {
+          "id": "hy0sy4f",
+          "s": 5,
+          "f": 1
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "X",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "7p6tmfq": {
+      "id": "7p6tmfq",
+      "groupId": "ruz38xv",
+      "name": "C#m7(11) (Corde 4)",
+      "startFret": 8,
+      "root": {
+        "s": 2,
+        "f": 3
+      },
+      "notes": [
+        {
+          "id": "ehfnoev",
+          "s": 3,
+          "f": 3
+        },
+        {
+          "id": "ywq5cne",
+          "s": 5,
+          "f": 4
+        },
+        {
+          "id": "5ol83kz",
+          "s": 4,
+          "f": 4
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "bozio5c": {
+      "id": "bozio5c",
+      "groupId": "btmuk4p",
+      "name": "C sus4 (Forme C - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "vqkntkd",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "x393xvy",
+          "s": 4,
+          "f": 3
+        },
+        {
+          "id": "919sv8j",
+          "s": 2,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "X"
+      },
+      "texts": []
+    },
+    "psbi19v": {
+      "id": "psbi19v",
+      "groupId": "p6w73kx",
+      "name": "Octave (Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "r8uxv6k",
+          "s": 4,
+          "f": 5
+        },
+        {
+          "id": "6zuls38",
+          "s": 2,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "d52z54n": {
+      "id": "d52z54n",
+      "groupId": "p6w73kx",
+      "name": "Octave(Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "zbqpdhc",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "c29husr",
+          "s": 5,
+          "f": 5
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "p6tiouh": {
+      "id": "p6tiouh",
+      "groupId": "p6w73kx",
+      "name": "Septième(Corde 6)",
+      "startFret": 3,
+      "root": {
+        "s": 0,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "witydte",
+          "s": 0,
+          "f": 0
+        },
+        {
+          "id": "1i74w7u",
+          "s": 2,
+          "f": 2
+        },
+        {
+          "id": "5rob3lh",
+          "s": 4,
+          "f": 5
+        },
+        {
+          "id": "7fblfmp",
+          "s": 5,
+          "f": 0
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "qp1za8d": {
+      "id": "qp1za8d",
+      "groupId": "p6w73kx",
+      "name": "Septième(Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "4dfesqj",
+          "s": 1,
+          "f": 0
+        },
+        {
+          "id": "p8cjxz1",
+          "s": 0,
+          "f": 5
+        },
+        {
+          "id": "5fjh8oy",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "b9w76a4",
+          "s": 5,
+          "f": 5
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "783umic": {
+      "id": "783umic",
+      "groupId": "j9zqxyr",
+      "name": "Power Chord - Racine Corde 3",
+      "startFret": 3,
+      "root": {
+        "s": 3,
+        "f": 1
+      },
+      "notes": [
+        {
+          "id": "uha9574",
+          "s": 4,
+          "f": 4
+        },
+        {
+          "id": "6bsdyaf",
+          "s": 5,
+          "f": 4
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "6j42hc9": {
+      "id": "6j42hc9",
+      "groupId": "5i28ttv",
+      "name": "Emin11(Corde 1)",
+      "startFret": 10,
+      "root": {
+        "s": 5,
+        "f": 2
+      },
+      "notes": [
+        {
+          "id": "2wqdrt3",
+          "s": 4,
+          "f": 2
+        },
+        {
+          "id": "zcvrhrc",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "k1b75dh",
+          "s": 2,
+          "f": 2
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "mqsw1lu": {
+      "id": "mqsw1lu",
+      "groupId": "btmuk4p",
+      "name": "C sus2(5add9 - Corde 6)",
+      "startFret": 8,
+      "root": {
+        "s": 0,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "ynkijrv",
+          "s": 1,
+          "f": 2
+        },
+        {
+          "id": "ikhnb46",
+          "s": 2,
+          "f": 4
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "tetla2n": {
+      "id": "tetla2n",
+      "groupId": "btmuk4p",
+      "name": "C sus2(5add9 - Corde 5)",
+      "startFret": 3,
+      "root": {
+        "s": 1,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "i8zpztm",
+          "s": 2,
+          "f": 2
+        },
+        {
+          "id": "jlz2e7z",
+          "s": 3,
+          "f": 4
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "a860vu0": {
+      "id": "a860vu0",
+      "groupId": "btmuk4p",
+      "name": "C sus2(5add9 - Corde 4)",
+      "startFret": 10,
+      "root": {
+        "s": 2,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "baayjwh",
+          "s": 3,
+          "f": 2
+        },
+        {
+          "id": "73hgcjp",
+          "s": 4,
+          "f": 5
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    },
+    "4414dvb": {
+      "id": "4414dvb",
+      "groupId": "btmuk4p",
+      "name": "C sus2(5add9 - Corde 3)",
+      "startFret": 5,
+      "root": {
+        "s": 3,
+        "f": 0
+      },
+      "notes": [
+        {
+          "id": "599dlha",
+          "s": 4,
+          "f": 3
+        },
+        {
+          "id": "eidd8oh",
+          "s": 5,
+          "f": 5
+        }
+      ],
+      "fingerings": {
+        "0": "X",
+        "1": "1",
+        "2": "3",
+        "3": "4",
+        "4": "2",
+        "5": "1"
+      },
+      "texts": []
+    }
+  }
+}

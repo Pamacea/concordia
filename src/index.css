@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* Or discret — référence au logo (accents du thème). */
+  --color-gold: #cfa86a;
+  --color-gold-light: #e3c38a;
+}
+
+/* Typo « cyber » de la marque (topbar uniquement — hors export diagrammes). */
+.font-cyber {
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #27272a;
+  border-radius: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 0;
+  background: #cfa86a;
+  margin-top: -4px;
+  cursor: pointer;
+  border: 1px solid #a8813c;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #e3c38a;
+}
