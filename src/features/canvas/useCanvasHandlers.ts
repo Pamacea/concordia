@@ -1,10 +1,5 @@
 import { useRef, type RefObject } from 'react';
-import {
-  STRING_GAP,
-  diagramLayout,
-  hitTestText,
-  type DiagramLayout,
-} from '../../lib/geometry';
+import { diagramLayout, hitTestText, type DiagramLayout } from '../../lib/geometry';
 import { generateId } from '../../lib/id';
 import { useChordsStore } from '../../lib/store/chordsStore';
 
@@ -19,7 +14,7 @@ interface CanvasPoint {
  * (corde 6 grave en bas) : on inverse donc l'index retourné.
  */
 const stringIndexAt = (x: number, layout: DiagramLayout): number => {
-  const raw = Math.round((x - layout.offsetX) / STRING_GAP);
+  const raw = Math.round((x - layout.offsetX) / layout.stringGap);
   return layout.horizontal ? 5 - raw : raw;
 };
 

@@ -1,5 +1,6 @@
 import type { ChordsFile } from '../lib/types';
+import { ChordsFileSchema } from '../lib/schemas';
 import raw from './chords.json';
 
 /** Base de données initiale embarquée (chargée une seule fois au démarrage). */
-export const SEED: ChordsFile = raw;
+export const SEED: ChordsFile = ChordsFileSchema.parse(raw);

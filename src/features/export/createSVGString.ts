@@ -1,6 +1,5 @@
 import {
   FRET_NUM_GAP,
-  STRING_GAP,
   TITLE_FIRST_CY,
   diagramLayout,
   dotScale,
@@ -27,6 +26,7 @@ export const createSVGString = (diag: Diagram, style: StyleSettings): string => 
   const {
     frets,
     gap,
+    stringGap,
     horizontal,
     offsetX,
     offsetY,
@@ -47,7 +47,7 @@ export const createSVGString = (diag: Diagram, style: StyleSettings): string => 
   const Y = (lx: number, ly: number) => (horizontal ? lx : ly);
 
   /** Position (axe logique X) d'une corde : inversée en horizontal (corde 6 grave en bas). */
-  const stringX = (s: number) => offsetX + (horizontal ? 5 - s : s) * STRING_GAP;
+  const stringX = (s: number) => offsetX + (horizontal ? 5 - s : s) * stringGap;
 
   const titleHTML = titleLines
     .map(
@@ -83,7 +83,7 @@ export const createSVGString = (diag: Diagram, style: StyleSettings): string => 
   }
 
   let rootHTML = '';
-  if (diag.root !== null && diag.root.f >= 0) {
+  if (diag.root !== null && diag.root.f >= 0 && diag.root.f < frets) {
     const rx = X(
       stringX(diag.root.s),
       offsetY + diag.root.f * gap + gap / 2,
@@ -96,6 +96,7 @@ export const createSVGString = (diag: Diagram, style: StyleSettings): string => 
   }
 
   const notesHTML = diag.notes
+    .filter((note) => note.f < frets)
     .map((note) => {
       const info = getIntervalInfo(diag.root, note, startFret);
       const nx = X(stringX(note.s), offsetY + note.f * gap + gap / 2);
@@ -126,7 +127,7 @@ export const createSVGString = (diag: Diagram, style: StyleSettings): string => 
   }
 
   const nutWidthVal = startFret === 1 ? style.nutThickness : Math.max(2, style.nutThickness * 0.4);
-  const nutHTML = `<line x1="${X(offsetX - style.stringThicknessBase / 2, offsetY)}" y1="${Y(offsetX - style.stringThicknessBase / 2, offsetY)}" x2="${X(offsetX + 5 * STRING_GAP + style.stringThicknessBase / 2, offsetY)}" y2="${Y(offsetX + 5 * STRING_GAP + style.stringThicknessBase / 2, offsetY)}" stroke="${style.nutColor}" stroke-width="${nutWidthVal}" opacity="${style.nutOpacity / 100}"/>`;
+  const nutHTML = `<line x1="${X(offsetX - style.stringThicknessBase / 2, offsetY)}" y1="${Y(offsetX - style.stringThicknessBase / 2, offsetY)}" x2="${X(offsetX + 5 * stringGap + style.stringThicknessBase / 2, offsetY)}" y2="${Y(offsetX + 5 * stringGap + style.stringThicknessBase / 2, offsetY)}" stroke="${style.nutColor}" stroke-width="${nutWidthVal}" opacity="${style.nutOpacity / 100}"/>`;
 
   const stringsHTML = Array.from({ length: 6 })
     .map((_, i) => {
@@ -143,8 +144,8 @@ export const createSVGString = (diag: Diagram, style: StyleSettings): string => 
     .map((_, i) => {
       const fx1 = X(offsetX, offsetY + i * gap);
       const fy1 = Y(offsetX, offsetY + i * gap);
-      const fx2 = X(offsetX + 5 * STRING_GAP, offsetY + i * gap);
-      const fy2 = Y(offsetX + 5 * STRING_GAP, offsetY + i * gap);
+      const fx2 = X(offsetX + 5 * stringGap, offsetY + i * gap);
+      const fy2 = Y(offsetX + 5 * stringGap, offsetY + i * gap);
       return `<line x1="${fx1}" y1="${fy1}" x2="${fx2}" y2="${fy2}" stroke="#ffffff" stroke-width="${style.fretThickness}" opacity="${style.fretOpacity / 100}"/>`;
     })
     .join('');

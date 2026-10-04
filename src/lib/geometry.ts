@@ -1,18 +1,23 @@
 import type { BottomIndicatorType, Diagram, FreeText, StyleSettings } from './types';
 
-export const SVG_WIDTH = 480;
 export const OFFSET_X = 65;
 export const OFFSET_Y = 120;
+/** Espacement des cordes par défaut (7 frettes et moins). */
 export const STRING_GAP = 70;
 /** Écart entre frettes « standard » (plafond au-delà duquel les cases rétrécissent). */
 export const FRET_GAP = 75;
 
 /** Longueur max du bloc frettes : au-delà, les cases se rétrécissent. */
-export const MAX_BOARD = 560;
+export const MAX_BOARD = 640;
+
+/** Base du resserrement des cordes : espacement = max(plancher, min(70, 560 / frettes)). */
+const STRING_GAP_BASE = 560;
+/** Plancher de l'espacement des cordes (beaucoup de frettes). */
+export const STRING_GAP_MIN = 40;
 
 export const MAX_FRET = 24;
 export const MIN_FRETS = 1;
-export const MAX_FRETS = 15;
+export const MAX_FRETS = 12;
 
 /** Titre du diagramme : taille bornée puis passage sur plusieurs lignes. */
 const TITLE_SIZE_MAX = 24;
@@ -48,6 +53,13 @@ export const fitFontSize = (
 /** Écart entre frettes pour `frets` cases : rétrécit quand la table dépasse MAX_BOARD. */
 export const fretGapFor = (frets: number): number =>
   Math.max(30, Math.min(FRET_GAP, MAX_BOARD / Math.max(1, frets)));
+
+/** Espacement des cordes pour `frets` cases : se resserre quand les frettes augmentent. */
+export const stringGapFor = (frets: number): number =>
+  Math.max(
+    STRING_GAP_MIN,
+    Math.round(Math.min(STRING_GAP, STRING_GAP_BASE / Math.max(1, frets))),
+  );
 
 /** Échelle des pastilles/labels : proportionnelle à l'écart des cases. */
 export const dotScale = (gap: number): number => Math.min(1, gap / FRET_GAP);
@@ -115,6 +127,8 @@ export interface DiagramLayout {
   frets: number;
   /** Écart vertical entre frettes (cases rétrécies au besoin). */
   gap: number;
+  /** Écart entre cordes (se resserre quand le nombre de frettes augmente). */
+  stringGap: number;
   horizontal: boolean;
   hasBottom: boolean;
   /** Début de la table sur l'axe logique X (65, + décalage titre en horizontal). */
@@ -141,15 +155,16 @@ export const diagramLayout = (diagram: Diagram, style: StyleSettings): DiagramLa
   const horizontal = (diagram.orientation ?? 'vertical') === 'horizontal';
   const hasBottom = style.bottomIndicatorType !== 'none';
   const gap = fretGapFor(frets);
+  const stringGap = stringGapFor(frets);
   const reserve = hasBottom ? 110 : 35;
 
   // Horizontal : marge latérale unique = moyenne des marges gauche/droite,
   // pour que la grille soit parfaitement centrée (largeur de canvas inchangée).
   const hMargin = (OFFSET_Y + reserve) / 2;
-  const width = horizontal ? 2 * hMargin + frets * gap : SVG_WIDTH;
+  const width = horizontal ? 2 * hMargin + frets * gap : 2 * OFFSET_X + 5 * stringGap;
 
   // Largeur disponible pour le titre (indépendante du titre lui-même : pas de circularité).
-  const titleWidth = horizontal ? width - TITLE_MARGIN : SVG_WIDTH - TITLE_MARGIN;
+  const titleWidth = width - TITLE_MARGIN;
   const titleSize = fitFontSize(diagram.name, titleWidth, TITLE_SIZE_MAX, TITLE_SIZE_MIN);
   const titleLead = titleSize * TITLE_LEAD_RATIO;
   const titleLines = wrapText(diagram.name, titleWidth, titleSize);
@@ -164,13 +179,14 @@ export const diagramLayout = (diagram: Diagram, style: StyleSettings): DiagramLa
   const nutZone = offsetY - NUT_TO_BOARD;
 
   const height = horizontal
-    ? offsetX + 5 * STRING_GAP + HORIZONTAL_BOTTOM
+    ? offsetX + 5 * stringGap + HORIZONTAL_BOTTOM
     : offsetY + frets * gap + reserve;
   const bottomOffset = offsetY + frets * gap + 32;
 
   return {
     frets,
     gap,
+    stringGap,
     horizontal,
     hasBottom,
     offsetX,
@@ -185,9 +201,9 @@ export const diagramLayout = (diagram: Diagram, style: StyleSettings): DiagramLa
   };
 };
 
-/** Nombre de frettes affichées : override par diagramme sinon déduit du style. */
+/** Nombre de frettes affichées : override par diagramme (borné à MAX_FRETS) sinon déduit du style. */
 export const diagramFrets = (diagram: Diagram, style: StyleSettings): number =>
-  diagram.fretCount ?? totalFretsFor(style.bottomIndicatorType);
+  Math.min(MAX_FRETS, diagram.fretCount ?? totalFretsFor(style.bottomIndicatorType));
 
 /** Dimensions du canvas SVG d'un diagramme. */
 export const diagramCanvasSize = (

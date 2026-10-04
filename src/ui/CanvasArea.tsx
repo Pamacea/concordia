@@ -18,7 +18,7 @@ export default function CanvasArea() {
   return (
     <div
       ref={containerRef}
-      className="flex-1 bg-neutral-900 flex flex-col items-center justify-center p-4 md:p-6 pb-24 overflow-auto relative"
+      className="flex-1 bg-neutral-900 flex flex-col items-center justify-center p-4 md:p-6 overflow-auto relative"
     >
       {diagram ? (
         <div className="relative shadow-2xl border border-neutral-800 overflow-hidden max-w-full">
@@ -32,7 +32,7 @@ export default function CanvasArea() {
       )}
 
       {diagram && (
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2 bg-neutral-950/90 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-neutral-700/80 shadow-2xl">
+        <div className="absolute right-6 top-1/2 -translate-y-1/2 z-30 flex flex-col items-center gap-2 bg-neutral-950/90 backdrop-blur-md px-2.5 py-4 border border-neutral-700/80 shadow-2xl">
           <ToolButton
             icon={<MousePointer2 size={18} />}
             label="Pointeur"
@@ -54,7 +54,7 @@ export default function CanvasArea() {
             isActive={activeTool === 'text'}
             onClick={() => setActiveTool('text')}
           />
-          <div className="w-px h-6 bg-neutral-800 mx-1"></div>
+          <div className="h-px w-6 bg-neutral-800 my-1"></div>
           <ToolButton
             icon={<Eraser size={18} />}
             label="Gomme"

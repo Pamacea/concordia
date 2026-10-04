@@ -1,6 +1,6 @@
 import { ChevronRight, Edit2, Palette } from 'lucide-react';
 import { diagramFingering } from '../lib/fingering';
-import { MAX_FRETS, MAX_FRET, MIN_FRETS, totalFretsFor } from '../lib/geometry';
+import { MAX_FRETS, MAX_FRET, MIN_FRETS, diagramFrets } from '../lib/geometry';
 import { useChordsStore } from '../lib/store/chordsStore';
 import type { BottomIndicatorType, DiagramOrientation } from '../lib/types';
 import ColorField from './ColorField';
@@ -186,7 +186,7 @@ export default function RightSidebar() {
                 Nombre de frettes
               </h3>
               <StepperInput
-                value={diagram.fretCount ?? totalFretsFor(style.bottomIndicatorType)}
+                value={diagramFrets(diagram, style)}
                 min={MIN_FRETS}
                 max={MAX_FRETS}
                 onChange={setFretCount}

@@ -2,7 +2,6 @@ import type { RefObject } from 'react';
 import { useCanvasHandlers } from '../features/canvas/useCanvasHandlers';
 import {
   FRET_NUM_GAP,
-  STRING_GAP,
   TITLE_FIRST_CY,
   diagramLayout,
   dotScale,
@@ -30,6 +29,7 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
   const {
     frets,
     gap,
+    stringGap,
     horizontal,
     offsetX,
     offsetY,
@@ -49,7 +49,7 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
   const Y = (lx: number, ly: number) => (horizontal ? lx : ly);
 
   /** Position (axe logique X) d'une corde : inversée en horizontal (corde 6 grave en bas). */
-  const stringX = (s: number) => offsetX + (horizontal ? 5 - s : s) * STRING_GAP;
+  const stringX = (s: number) => offsetX + (horizontal ? 5 - s : s) * stringGap;
 
   return (
     <svg
@@ -157,8 +157,8 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
           key={`fret-${i}`}
           x1={X(offsetX, offsetY + i * gap)}
           y1={Y(offsetX, offsetY + i * gap)}
-          x2={X(offsetX + 5 * STRING_GAP, offsetY + i * gap)}
-          y2={Y(offsetX + 5 * STRING_GAP, offsetY + i * gap)}
+          x2={X(offsetX + 5 * stringGap, offsetY + i * gap)}
+          y2={Y(offsetX + 5 * stringGap, offsetY + i * gap)}
           stroke="#ffffff"
           strokeWidth={style.fretThickness}
           opacity={style.fretOpacity / 100}
@@ -169,8 +169,8 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
       <line
         x1={X(offsetX - style.stringThicknessBase / 2, offsetY)}
         y1={Y(offsetX - style.stringThicknessBase / 2, offsetY)}
-        x2={X(offsetX + 5 * STRING_GAP + style.stringThicknessBase / 2, offsetY)}
-        y2={Y(offsetX + 5 * STRING_GAP + style.stringThicknessBase / 2, offsetY)}
+        x2={X(offsetX + 5 * stringGap + style.stringThicknessBase / 2, offsetY)}
+        y2={Y(offsetX + 5 * stringGap + style.stringThicknessBase / 2, offsetY)}
         stroke={style.nutColor}
         strokeWidth={
           startFret === 1 ? style.nutThickness : Math.max(2, style.nutThickness * 0.4)
@@ -199,8 +199,8 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
         </g>
       )}
 
-      {/* Racine frettée */}
-      {diagram.root !== null && diagram.root.f >= 0 && (
+      {/* Racine frettée (masquée si hors gabarit après baisse des frettes) */}
+      {diagram.root !== null && diagram.root.f >= 0 && diagram.root.f < frets && (
         <g>
           <circle
             cx={X(
@@ -235,8 +235,9 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
         </g>
       )}
 
-      {/* Autres notes frettées */}
+      {/* Autres notes frettées (masquées si hors gabarit après baisse des frettes) */}
       {diagram.notes.map((note) => {
+        if (note.f >= frets) return null;
         const info = getIntervalInfo(diagram.root, note, startFret);
         const lx = stringX(note.s);
         const ly = offsetY + note.f * gap + gap / 2;
