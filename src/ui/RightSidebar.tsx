@@ -229,9 +229,21 @@ export default function RightSidebar() {
             <Edit2 size={14} /> Doigtés & Cordes à Vide
           </h3>
           <div className="grid grid-cols-6 gap-1.5">
-            {['E', 'A', 'D', 'G', 'B', 'e'].map((stringLabel, idx) => (
+            {[
+              { num: '6', note: 'E' },
+              { num: '5', note: 'A' },
+              { num: '4', note: 'D' },
+              { num: '3', note: 'G' },
+              { num: '2', note: 'B' },
+              { num: '1', note: 'e' },
+            ].map(({ num, note }, idx) => (
               <div key={idx} className="flex flex-col items-center gap-1">
-                <span className="text-xs text-neutral-400 font-mono">{stringLabel}</span>
+                <span
+                  className="text-xs text-neutral-400 font-mono"
+                  title={`Corde ${num} (${note})`}
+                >
+                  {num}·{note}
+                </span>
                 <input
                   type="text"
                   maxLength={2}
@@ -251,7 +263,7 @@ export default function RightSidebar() {
             ))}
           </div>
           <p className="text-[11px] text-neutral-500 italic">
-            0 = Corde à vide (○), X = Non jouée (×)
+            6 = Mi grave → 1 = Mi aigu · 0 = Corde à vide (○), X = Non jouée (×)
           </p>
         </div>
 

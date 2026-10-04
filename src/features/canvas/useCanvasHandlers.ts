@@ -1,5 +1,10 @@
 import { useRef, type RefObject } from 'react';
-import { STRING_GAP, diagramLayout, hitTestText } from '../../lib/geometry';
+import {
+  STRING_GAP,
+  diagramLayout,
+  hitTestText,
+  type DiagramLayout,
+} from '../../lib/geometry';
 import { generateId } from '../../lib/id';
 import { useChordsStore } from '../../lib/store/chordsStore';
 
@@ -7,6 +12,16 @@ interface CanvasPoint {
   x: number;
   y: number;
 }
+
+/**
+ * Index de corde depuis la position logique X.
+ * En mode horizontal, l'ordre des cordes est inversé à l'écran
+ * (corde 6 grave en bas) : on inverse donc l'index retourné.
+ */
+const stringIndexAt = (x: number, layout: DiagramLayout): number => {
+  const raw = Math.round((x - layout.offsetX) / STRING_GAP);
+  return layout.horizontal ? 5 - raw : raw;
+};
 
 /**
  * Convertit des coordonnées écran en coordonnées logiques du diagramme.
@@ -132,7 +147,7 @@ export function useCanvasHandlers(svgRef: RefObject<SVGSVGElement | null>) {
 
     // Zone sillet : cycle corde à vide → muette → vide
     if (y >= layout.nutZone - 20 && y < layout.nutZone + 20) {
-      const stringIdx = Math.round((x - layout.offsetX) / STRING_GAP);
+      const stringIdx = stringIndexAt(x, layout);
       if (stringIdx >= 0 && stringIdx <= 5) {
         const current = diagram.fingerings[stringIdx] ?? '';
         let nextState = '0';
@@ -150,7 +165,7 @@ export function useCanvasHandlers(svgRef: RefObject<SVGSVGElement | null>) {
 
     const maxFretsLimit = layout.frets;
     const gridY = y - layout.offsetY;
-    const s = Math.round((x - layout.offsetX) / STRING_GAP);
+    const s = stringIndexAt(x, layout);
     const f = Math.floor(gridY / layout.gap);
 
     const validS = Math.max(0, Math.min(5, s));
@@ -201,7 +216,7 @@ export function useCanvasHandlers(svgRef: RefObject<SVGSVGElement | null>) {
     const { x, y } = point;
 
     if (y >= layout.nutZone - 20 && y < layout.nutZone + 20) {
-      const stringIdx = Math.round((x - layout.offsetX) / STRING_GAP);
+      const stringIdx = stringIndexAt(x, layout);
       if (stringIdx >= 0 && stringIdx <= 5) {
         updateActiveDiagram((d) => ({
           ...d,
@@ -214,7 +229,7 @@ export function useCanvasHandlers(svgRef: RefObject<SVGSVGElement | null>) {
 
     const maxFretsLimit = layout.frets;
     const gridY = y - layout.offsetY;
-    const s = Math.round((x - layout.offsetX) / STRING_GAP);
+    const s = stringIndexAt(x, layout);
     const f = Math.floor(gridY / layout.gap);
 
     const validS = Math.max(0, Math.min(5, s));

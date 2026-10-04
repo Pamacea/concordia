@@ -12,14 +12,14 @@ import type {
 import { generateId } from '../id';
 
 export const DEFAULT_STYLE: StyleSettings = {
-  diagramBgColor: '#1c1c1e',
-  nutThickness: 8,
+  diagramBgColor: '#0d0d0d',
+  nutThickness: 16,
   nutOpacity: 100,
   nutColor: '#ffffff',
-  stringThicknessBase: 3,
-  stringOpacity: 90,
-  fretThickness: 3,
-  fretOpacity: 90,
+  stringThicknessBase: 4,
+  stringOpacity: 100,
+  fretThickness: 4,
+  fretOpacity: 100,
   showFretNumbers: true,
   fretNumberSize: 18,
   fretNumberColor: '#a3a3a3',

@@ -46,7 +46,7 @@ export default function ExportModal({ onClose }: ExportModalProps) {
 
   return (
     <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className="bg-neutral-900 border border-neutral-800 rounded-2xl w-full overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+      <div className="bg-neutral-900 border border-neutral-800 rounded-2xl w-full max-w-[32rem] overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
         <div className="p-4 border-b border-neutral-800 flex items-center justify-between">
           <h2 className="text-lg font-bold text-white flex items-center gap-2">
             <Download size={20} className="text-gold" />

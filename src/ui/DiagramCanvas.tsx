@@ -1,6 +1,7 @@
 import type { RefObject } from 'react';
 import { useCanvasHandlers } from '../features/canvas/useCanvasHandlers';
 import {
+  FRET_NUM_GAP,
   STRING_GAP,
   TITLE_FIRST_CY,
   diagramLayout,
@@ -47,6 +48,9 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
   const X = (lx: number, ly: number) => (horizontal ? ly : lx);
   const Y = (lx: number, ly: number) => (horizontal ? lx : ly);
 
+  /** Position (axe logique X) d'une corde : inversée en horizontal (corde 6 grave en bas). */
+  const stringX = (s: number) => offsetX + (horizontal ? 5 - s : s) * STRING_GAP;
+
   return (
     <svg
       ref={svgRef}
@@ -86,8 +90,8 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
           diagram.notes.some((n) => n.s === i && n.f >= 0);
         const isOpenRoot =
           diagram.root !== null && diagram.root.s === i && diagram.root.f === -1;
-        const cx = X(offsetX + i * STRING_GAP, nutZone);
-        const cy = Y(offsetX + i * STRING_GAP, nutZone);
+        const cx = X(stringX(i), nutZone);
+        const cy = Y(stringX(i), nutZone);
 
         if (isOpenRoot) {
           return (
@@ -136,10 +140,10 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
         return (
           <line
             key={`string-${i}`}
-            x1={X(offsetX + i * STRING_GAP, offsetY)}
-            y1={Y(offsetX + i * STRING_GAP, offsetY)}
-            x2={X(offsetX + i * STRING_GAP, offsetY + frets * gap)}
-            y2={Y(offsetX + i * STRING_GAP, offsetY + frets * gap)}
+            x1={X(stringX(i), offsetY)}
+            y1={Y(stringX(i), offsetY)}
+            x2={X(stringX(i), offsetY + frets * gap)}
+            y2={Y(stringX(i), offsetY + frets * gap)}
             stroke="#ffffff"
             strokeWidth={proportionalWidth}
             opacity={style.stringOpacity / 100}
@@ -180,7 +184,7 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
           {Array.from({ length: frets }).map((_, i) => (
             <text
               key={`fret-num-${i}`}
-              x={horizontal ? offsetY + i * gap + gap / 2 : offsetX - 28}
+              x={horizontal ? offsetY + i * gap + gap / 2 : offsetX - FRET_NUM_GAP}
               y={horizontal ? canvasH - 37 : offsetY + i * gap + gap / 2}
               fill={style.fretNumberColor}
               fontSize={style.fretNumberSize}
@@ -200,11 +204,11 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
         <g>
           <circle
             cx={X(
-              offsetX + diagram.root.s * STRING_GAP,
+              stringX(diagram.root.s),
               offsetY + diagram.root.f * gap + gap / 2,
             )}
             cy={Y(
-              offsetX + diagram.root.s * STRING_GAP,
+              stringX(diagram.root.s),
               offsetY + diagram.root.f * gap + gap / 2,
             )}
             r={dotR}
@@ -212,11 +216,11 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
           />
           <text
             x={X(
-              offsetX + diagram.root.s * STRING_GAP,
+              stringX(diagram.root.s),
               offsetY + diagram.root.f * gap + gap / 2,
             )}
             y={Y(
-              offsetX + diagram.root.s * STRING_GAP,
+              stringX(diagram.root.s),
               offsetY + diagram.root.f * gap + gap / 2,
             )}
             fill="#ffffff"
@@ -234,7 +238,7 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
       {/* Autres notes frettées */}
       {diagram.notes.map((note) => {
         const info = getIntervalInfo(diagram.root, note, startFret);
-        const lx = offsetX + note.s * STRING_GAP;
+        const lx = stringX(note.s);
         const ly = offsetY + note.f * gap + gap / 2;
         const cx = X(lx, ly);
         const cy = Y(lx, ly);
@@ -303,8 +307,8 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
           return (
             <text
               key={`bottom-ind-${sIdx}`}
-              x={horizontal ? bottomOffset : offsetX + sIdx * STRING_GAP}
-              y={horizontal ? offsetX + sIdx * STRING_GAP : bottomOffset}
+              x={horizontal ? bottomOffset : stringX(sIdx)}
+              y={horizontal ? stringX(sIdx) : bottomOffset}
               fill="#cfa86a"
               fontSize="18"
               fontWeight="bold"

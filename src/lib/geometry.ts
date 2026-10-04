@@ -25,6 +25,10 @@ export const TITLE_FIRST_CY = 45;
 const TITLE_TO_NUT = 34;
 /** Indicateurs sillet → sillet (début de la table). */
 const NUT_TO_BOARD = 25;
+/** Réserve sous les cordes en mode horizontal (numéros de cases). */
+const HORIZONTAL_BOTTOM = 77;
+/** Distance entre les numéros de cases et la table (axe logique X, mode vertical). */
+export const FRET_NUM_GAP = 40;
 
 export const totalFretsFor = (indicator: BottomIndicatorType): number =>
   indicator === 'none' ? 7 : 6;
@@ -139,9 +143,13 @@ export const diagramLayout = (diagram: Diagram, style: StyleSettings): DiagramLa
   const gap = fretGapFor(frets);
   const reserve = hasBottom ? 110 : 35;
 
+  // Horizontal : marge latérale unique = moyenne des marges gauche/droite,
+  // pour que la grille soit parfaitement centrée (largeur de canvas inchangée).
+  const hMargin = (OFFSET_Y + reserve) / 2;
+  const width = horizontal ? 2 * hMargin + frets * gap : SVG_WIDTH;
+
   // Largeur disponible pour le titre (indépendante du titre lui-même : pas de circularité).
-  const titleWidth = horizontal ? OFFSET_Y + frets * gap + reserve - TITLE_MARGIN
-    : SVG_WIDTH - TITLE_MARGIN;
+  const titleWidth = horizontal ? width - TITLE_MARGIN : SVG_WIDTH - TITLE_MARGIN;
   const titleSize = fitFontSize(diagram.name, titleWidth, TITLE_SIZE_MAX, TITLE_SIZE_MIN);
   const titleLead = titleSize * TITLE_LEAD_RATIO;
   const titleLines = wrapText(diagram.name, titleWidth, titleSize);
@@ -149,14 +157,15 @@ export const diagramLayout = (diagram: Diagram, style: StyleSettings): DiagramLa
     TITLE_FIRST_CY + (titleLines.length - 1) * titleLead + titleLead / 2;
 
   // Vertical : la table descend pour laisser passer le titre.
-  // Horizontal : la table se décale vers le bas (l'axe X devient l'axe écran Y).
-  const offsetY = horizontal ? OFFSET_Y : titleBottom + TITLE_TO_NUT + NUT_TO_BOARD;
-  const offsetX = horizontal ? OFFSET_X + (titleLines.length - 1) * titleLead : OFFSET_X;
+  // Horizontal : les cordes (axe écran Y) descendent sous le bloc titre
+  // avec le même écart que le vertical, pour que titre et pastilles ne se touchent pas.
+  const offsetY = horizontal ? hMargin : titleBottom + TITLE_TO_NUT + NUT_TO_BOARD;
+  const offsetX = horizontal ? titleBottom + TITLE_TO_NUT + NUT_TO_BOARD : OFFSET_X;
   const nutZone = offsetY - NUT_TO_BOARD;
 
-  const depth = (horizontal ? OFFSET_Y : offsetY) + frets * gap + reserve;
-  const width = horizontal ? depth : SVG_WIDTH;
-  const height = horizontal ? SVG_WIDTH + (titleLines.length - 1) * titleLead : depth;
+  const height = horizontal
+    ? offsetX + 5 * STRING_GAP + HORIZONTAL_BOTTOM
+    : offsetY + frets * gap + reserve;
   const bottomOffset = offsetY + frets * gap + 32;
 
   return {
