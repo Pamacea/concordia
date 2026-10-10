@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import type { TuningId } from './types';
 
 const PositionSchema = z.object({
   s: z.number(),
@@ -27,6 +28,15 @@ export const DiagramSchema = z.object({
   startFret: z.number(),
   fretCount: z.number().int().min(1).max(15).optional(),
   orientation: z.enum(['vertical', 'horizontal']).optional(),
+  // Chaîne libre (et non enum) : un accordage inconnu ne doit pas invalider
+  // tout le document au chargement — tuningOffsets() retombe sur Standard E.
+  tuning: z
+    .string()
+    .optional()
+    .transform((v) => v as TuningId | undefined),
+  // `.catch` : une valeur héritée (ex. 'intervals', retiré de la liste)
+  // retombe sur 'none' au chargement au lieu d'invalider tout le document.
+  nutIndicator: z.enum(['notes', 'none']).optional().catch('none'),
   root: PositionSchema.nullable().default(null),
   notes: z.array(NoteSchema).default([]),
   fingerings: z.record(z.string(), z.string()).default({}),

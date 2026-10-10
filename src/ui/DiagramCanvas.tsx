@@ -8,9 +8,9 @@ import {
   freeTextMetrics,
 } from '../lib/geometry';
 import { diagramFingering } from '../lib/fingering';
-import { bottomLabel } from '../lib/labels';
+import { bottomLabel, nutLabel } from '../lib/labels';
 import { useChordsStore } from '../lib/store/chordsStore';
-import { getIntervalInfo } from '../lib/theory';
+import { getIntervalInfo, tuningOffsets } from '../lib/theory';
 import type { Diagram } from '../lib/types';
 
 interface DiagramCanvasProps {
@@ -25,6 +25,7 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
     useCanvasHandlers(svgRef);
 
   const startFret = diagram.startFret || 1;
+  const offsets = tuningOffsets(diagram.tuning);
   const layout = diagramLayout(diagram, style);
   const {
     frets,
@@ -40,6 +41,8 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
     width: canvasW,
     height: canvasH,
     bottomOffset,
+    hasNutLabels,
+    nutLabelY,
   } = layout;
   const scale = dotScale(gap);
   const dotR = 22 * scale;
@@ -81,6 +84,28 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
           {line}
         </text>
       ))}
+
+      {/* Indicateurs dessus le sillet : note de la corde à vide ou son intervalle */}
+      {hasNutLabels &&
+        Array.from({ length: 6 }).map((_, i) => {
+          const label = nutLabel(diagram, i);
+          if (!label) return null;
+          return (
+            <text
+              key={`nut-label-${i}`}
+              x={X(stringX(i), nutLabelY)}
+              y={Y(stringX(i), nutLabelY)}
+              fill="#cfa86a"
+              fontSize="16"
+              fontWeight="bold"
+              fontFamily="sans-serif"
+              textAnchor="middle"
+              dominantBaseline="central"
+            >
+              {label}
+            </text>
+          );
+        })}
 
       {/* Indicateurs sillet (ouvert, muet, ou racine à vide) */}
       {Array.from({ length: 6 }).map((_, i) => {
@@ -238,7 +263,7 @@ export default function DiagramCanvas({ svgRef, diagram }: DiagramCanvasProps) {
       {/* Autres notes frettées (masquées si hors gabarit après baisse des frettes) */}
       {diagram.notes.map((note) => {
         if (note.f >= frets) return null;
-        const info = getIntervalInfo(diagram.root, note, startFret);
+        const info = getIntervalInfo(diagram.root, note, startFret, offsets);
         const lx = stringX(note.s);
         const ly = offsetY + note.f * gap + gap / 2;
         const cx = X(lx, ly);

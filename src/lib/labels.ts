@@ -1,5 +1,9 @@
 import { diagramFingering } from './fingering';
-import { getIntervalInfo, getNoteName } from './theory';
+import {
+  getIntervalInfo,
+  getNoteName,
+  tuningOffsets,
+} from './theory';
 import type { Diagram, StyleSettings } from './types';
 
 /** Libellé affiché sous la table pour une corde donnée. */
@@ -9,6 +13,7 @@ export const bottomLabel = (
   stringIdx: number,
   startFret: number,
 ): string => {
+  const offsets = tuningOffsets(diag.tuning);
   const customFingering = diagramFingering(diag, stringIdx);
 
   if (style.bottomIndicatorType === 'fingerings') {
@@ -24,8 +29,8 @@ export const bottomLabel = (
     if (noteOnString) actualFret = startFret + noteOnString.f;
 
     if (customFingering === 'X' && actualFret === -1) return 'X';
-    if (actualFret >= 0) return getNoteName(stringIdx, actualFret);
-    if (customFingering === '0') return getNoteName(stringIdx, 0);
+    if (actualFret >= 0) return getNoteName(stringIdx, actualFret, offsets);
+    if (customFingering === '0') return getNoteName(stringIdx, 0, offsets);
     return '';
   }
 
@@ -36,7 +41,17 @@ export const bottomLabel = (
   if (noteOnString) played = noteOnString;
 
   if (played) {
-    return getIntervalInfo(diag.root, played, startFret).label;
+    return getIntervalInfo(diag.root, played, startFret, offsets).label;
   }
   return customFingering;
+};
+
+/**
+ * Libellé affiché au-dessus du sillet (au-dessus des ○/×) pour une corde donnée :
+ * la note de la corde à vide selon l'accordage du diagramme. Chaîne vide si
+ * l'indicateur est désactivé.
+ */
+export const nutLabel = (diag: Diagram, stringIdx: number): string => {
+  if ((diag.nutIndicator ?? 'none') !== 'notes') return '';
+  return getNoteName(stringIdx, 0, tuningOffsets(diag.tuning));
 };

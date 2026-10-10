@@ -162,6 +162,8 @@ export const useChordsStore = create<ChordsState>()((set, get) => ({
       groupId: gId,
       name: 'Nouvel Accord',
       startFret: 3,
+      tuning: 'standard-e',
+      nutIndicator: 'none',
       root: null,
       notes: [],
       fingerings: { 0: 'X', 1: '1', 2: '3', 3: '4', 4: '2', 5: '1' },

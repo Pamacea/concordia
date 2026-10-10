@@ -30,6 +30,10 @@ export const TITLE_FIRST_CY = 45;
 const TITLE_TO_NUT = 34;
 /** Indicateurs sillet → sillet (début de la table). */
 const NUT_TO_BOARD = 25;
+/** Bande réservée aux indicateurs dessus le sillet (0 si désactivés). */
+export const NUT_LABEL_BAND = 46;
+/** Distance (logique) entre le centre des labels dessus sillet et celui des ○/×. */
+export const NUT_LABEL_GAP = 34;
 /** Réserve sous les cordes en mode horizontal (numéros de cases). */
 const HORIZONTAL_BOTTOM = 77;
 /** Distance entre les numéros de cases et la table (axe logique X, mode vertical). */
@@ -144,6 +148,10 @@ export interface DiagramLayout {
   height: number;
   /** Position des indicateurs sous la touche (axe logique Y). */
   bottomOffset: number;
+  /** Vrai si une rangée de labels doit être dessinée au-dessus des ○/×. */
+  hasNutLabels: boolean;
+  /** Centre de cette rangée (axe logique Y) ; non pertinent si inactive. */
+  nutLabelY: number;
 }
 
 /**
@@ -154,13 +162,16 @@ export const diagramLayout = (diagram: Diagram, style: StyleSettings): DiagramLa
   const frets = diagramFrets(diagram, style);
   const horizontal = (diagram.orientation ?? 'vertical') === 'horizontal';
   const hasBottom = style.bottomIndicatorType !== 'none';
+  const hasNutLabels = (diagram.nutIndicator ?? 'none') !== 'none';
+  const nutBand = hasNutLabels ? NUT_LABEL_BAND : 0;
   const gap = fretGapFor(frets);
   const stringGap = stringGapFor(frets);
   const reserve = hasBottom ? 110 : 35;
 
   // Horizontal : marge latérale unique = moyenne des marges gauche/droite,
-  // pour que la grille soit parfaitement centrée (largeur de canvas inchangée).
-  const hMargin = (OFFSET_Y + reserve) / 2;
+  // pour que la grille soit parfaitement centrée. `nutBand` élargit les deux
+  // côtés pour dégager la rangée de labels au-delà du bord gauche du canvas.
+  const hMargin = (OFFSET_Y + reserve + nutBand) / 2;
   const width = horizontal ? 2 * hMargin + frets * gap : 2 * OFFSET_X + 5 * stringGap;
 
   // Largeur disponible pour le titre (indépendante du titre lui-même : pas de circularité).
@@ -171,12 +182,17 @@ export const diagramLayout = (diagram: Diagram, style: StyleSettings): DiagramLa
   const titleBottom =
     TITLE_FIRST_CY + (titleLines.length - 1) * titleLead + titleLead / 2;
 
-  // Vertical : la table descend pour laisser passer le titre.
+  // Vertical : la table descend pour laisser passer le titre (+ la rangée de labels).
   // Horizontal : les cordes (axe écran Y) descendent sous le bloc titre
   // avec le même écart que le vertical, pour que titre et pastilles ne se touchent pas.
-  const offsetY = horizontal ? hMargin : titleBottom + TITLE_TO_NUT + NUT_TO_BOARD;
-  const offsetX = horizontal ? titleBottom + TITLE_TO_NUT + NUT_TO_BOARD : OFFSET_X;
+  const offsetY = horizontal
+    ? hMargin
+    : titleBottom + TITLE_TO_NUT + nutBand + NUT_TO_BOARD;
+  const offsetX = horizontal
+    ? titleBottom + TITLE_TO_NUT + nutBand + NUT_TO_BOARD
+    : OFFSET_X;
   const nutZone = offsetY - NUT_TO_BOARD;
+  const nutLabelY = nutZone - NUT_LABEL_GAP;
 
   const height = horizontal
     ? offsetX + 5 * stringGap + HORIZONTAL_BOTTOM
@@ -198,6 +214,8 @@ export const diagramLayout = (diagram: Diagram, style: StyleSettings): DiagramLa
     width,
     height,
     bottomOffset,
+    hasNutLabels,
+    nutLabelY,
   };
 };
 

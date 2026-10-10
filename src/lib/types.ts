@@ -28,6 +28,24 @@ export interface FreeText {
 
 export type DiagramOrientation = 'vertical' | 'horizontal';
 
+/** Accordage : clé dans `TUNINGS` (lib/théorie). */
+export type TuningId =
+  | 'standard-e'
+  | 'half-step-down'
+  | 'whole-step-down'
+  | 'drop-d'
+  | 'drop-cs'
+  | 'drop-c'
+  | 'dadgad'
+  | 'open-g'
+  | 'open-d'
+  | 'open-e'
+  | 'open-a'
+  | 'nashville';
+
+/** Indicateurs affichés au-dessus du sillet (au-dessus des ○/×). */
+export type NutIndicatorType = 'notes' | 'none';
+
 export interface Diagram {
   id: string;
   groupId: string;
@@ -37,6 +55,10 @@ export interface Diagram {
   fretCount?: number;
   /** Orientation du diagramme (défaut : vertical). */
   orientation?: DiagramOrientation;
+  /** Accordage propre au diagramme (défaut : standard E). */
+  tuning?: TuningId;
+  /** Indicateurs dessus le sillet, propres au diagramme (défaut : aucun). */
+  nutIndicator?: NutIndicatorType;
   root: Position | null;
   notes: Note[];
   fingerings: Fingerings;

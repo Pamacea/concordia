@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { ChevronLeft, ChevronRight, Download, Upload } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { importChordsFile } from '../features/import/importJson';
 import { useChordsStore } from '../lib/store/chordsStore';
 
@@ -34,18 +35,15 @@ export default function TopBar({ onOpenExport }: TopBarProps) {
 
   return (
     <div className="h-16 bg-neutral-950 border-b border-neutral-800 flex items-center justify-between px-3 md:px-5 z-25 shrink-0 relative">
-      {/* Section gauche : logo + nom */}
-      <div className="flex items-center gap-2.5 md:gap-3 justify-start py-1 z-10">
-        <img
-          src="/concordia-padded.png"
-          alt=""
-          width={675}
-          height={704}
-          className="hidden sm:block h-11 w-auto shrink-0"
-        />
-        <span className="hidden sm:inline font-cyber font-black text-lg md:text-2xl tracking-[0.28em] bg-gradient-to-b from-white to-[#d4b075] bg-clip-text text-transparent select-none whitespace-nowrap">
+      {/* Section gauche : nom → retour accueil */}
+      <div className="flex items-center justify-start py-1 z-10">
+        <Link
+          to="/"
+          title="Retour à l'accueil"
+          className="hidden sm:inline font-cyber font-black text-lg md:text-2xl tracking-[0.28em] bg-gradient-to-b from-white to-[#d4b075] bg-clip-text text-transparent select-none whitespace-nowrap hover:opacity-80 transition-opacity"
+        >
           CONCORDIA
-        </span>
+        </Link>
       </div>
 
       {/* Titre centré dans l'espace restant (jamais par-dessus logo/boutons) */}

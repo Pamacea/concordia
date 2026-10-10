@@ -2,7 +2,13 @@ import { ChevronRight, Edit2, Palette } from 'lucide-react';
 import { diagramFingering } from '../lib/fingering';
 import { MAX_FRETS, MAX_FRET, MIN_FRETS, diagramFrets } from '../lib/geometry';
 import { useChordsStore } from '../lib/store/chordsStore';
-import type { BottomIndicatorType, DiagramOrientation } from '../lib/types';
+import { TUNINGS, getNoteName, tuningOffsets } from '../lib/theory';
+import type {
+  BottomIndicatorType,
+  DiagramOrientation,
+  NutIndicatorType,
+  TuningId,
+} from '../lib/types';
 import ColorField from './ColorField';
 
 const BOTTOM_INDICATOR_VALUES: readonly BottomIndicatorType[] = [
@@ -19,6 +25,21 @@ function isBottomIndicatorType(value: string): value is BottomIndicatorType {
 function toBottomIndicatorType(value: string): BottomIndicatorType {
   return isBottomIndicatorType(value) ? value : 'none';
 }
+
+function isTuningId(value: string): value is TuningId {
+  return Object.prototype.hasOwnProperty.call(TUNINGS, value);
+}
+
+function toNutIndicatorType(value: string): NutIndicatorType {
+  return value === 'notes' ? 'notes' : 'none';
+}
+
+/** Même gabarit que les encadrements « Indicateurs … ». */
+const FRAME = 'space-y-2 bg-neutral-900/60 p-2.5 border border-neutral-800';
+const SELECT =
+  'w-full bg-neutral-900 border border-neutral-800 px-3 py-2 text-sm text-neutral-200 focus:outline-none focus:border-gold font-medium';
+const FRAME_TITLE = 'text-xs font-bold text-gold uppercase tracking-wider';
+const FRAME_HINT = 'text-[10px] text-neutral-500 font-medium';
 
 interface StepperInputProps {
   value: number;
@@ -130,6 +151,11 @@ export default function RightSidebar() {
 
   const diagram = activeDiagramId ? (diagrams[activeDiagramId] ?? null) : null;
   const orientation: DiagramOrientation = diagram?.orientation ?? 'vertical';
+  // Repli sur Standard E si l'accordage persisté n'est plus connu.
+  const tuningValue: TuningId =
+    diagram?.tuning !== undefined && isTuningId(diagram.tuning)
+      ? diagram.tuning
+      : 'standard-e';
 
   const setStartFret = (fret: number) => {
     const clamped = Math.max(1, Math.min(MAX_FRET, fret));
@@ -229,51 +255,95 @@ export default function RightSidebar() {
             <Edit2 size={14} /> Doigtés & Cordes à Vide
           </h3>
           <div className="grid grid-cols-6 gap-1.5">
-            {[
-              { num: '6', note: 'E' },
-              { num: '5', note: 'A' },
-              { num: '4', note: 'D' },
-              { num: '3', note: 'G' },
-              { num: '2', note: 'B' },
-              { num: '1', note: 'e' },
-            ].map(({ num, note }, idx) => (
-              <div key={idx} className="flex flex-col items-center gap-1">
-                <span
-                  className="text-xs text-neutral-400 font-mono"
-                  title={`Corde ${num} (${note})`}
-                >
-                  {num}·{note}
-                </span>
-                <input
-                  type="text"
-                  maxLength={2}
-                  value={diagram ? diagramFingering(diagram, idx) : ''}
-                  disabled={!diagram}
-                  onChange={(e) => {
-                    const val = e.target.value;
-                    updateActiveDiagram((d) => ({
-                      ...d,
-                      fingerings: { ...d.fingerings, [idx]: val },
-                    }));
-                  }}
-                  className="w-full text-center bg-neutral-900 border border-neutral-800 px-1.5 py-2 text-sm font-semibold text-gold focus:outline-none focus:border-gold disabled:opacity-50"
-                  placeholder="-"
-                />
-              </div>
-            ))}
+            {Array.from({ length: 6 }).map((_, idx) => {
+              const num = String(6 - idx);
+              const note = getNoteName(idx, 0, tuningOffsets(diagram?.tuning));
+              return (
+                <div key={idx} className="flex flex-col items-center gap-1">
+                  <span
+                    className="text-xs text-neutral-400 font-mono"
+                    title={`Corde ${num} (${note})`}
+                  >
+                    {num}·{note}
+                  </span>
+                  <input
+                    type="text"
+                    maxLength={2}
+                    value={diagram ? diagramFingering(diagram, idx) : ''}
+                    disabled={!diagram}
+                    onChange={(e) => {
+                      const val = e.target.value;
+                      updateActiveDiagram((d) => ({
+                        ...d,
+                        fingerings: { ...d.fingerings, [idx]: val },
+                      }));
+                    }}
+                    className="w-full text-center bg-neutral-900 border border-neutral-800 px-1.5 py-2 text-sm font-semibold text-gold focus:outline-none focus:border-gold disabled:opacity-50"
+                    placeholder="-"
+                  />
+                </div>
+              );
+            })}
           </div>
           <p className="text-[11px] text-neutral-500 italic">
-            6 = Mi grave → 1 = Mi aigu · 0 = Corde à vide (○), X = Non jouée (×)
+            {`6 = ${getNoteName(0, 0, tuningOffsets(tuningValue))} grave → 1 = ${getNoteName(
+              5,
+              0,
+              tuningOffsets(tuningValue),
+            )} aigu · 0 = Corde à vide (○), X = Non jouée (×)`}
           </p>
         </div>
 
         <div className="w-full h-px bg-neutral-800"></div>
 
+        {/* Accordage — propre à chaque diagramme */}
+        {diagram && (
+          <div className={FRAME}>
+            <h3 className={FRAME_TITLE}>Accordage</h3>
+            <select
+              value={tuningValue}
+              onChange={(e) => {
+                const value = e.target.value;
+                if (isTuningId(value)) {
+                  updateActiveDiagram((d) => ({ ...d, tuning: value }));
+                }
+              }}
+              className={SELECT}
+            >
+              {Object.entries(TUNINGS).map(([id, tuning]) => (
+                <option key={id} value={id}>
+                  {tuning.name}
+                </option>
+              ))}
+            </select>
+            <p className={FRAME_HINT}>Corde 6 → corde 1 · propre à ce diagramme</p>
+          </div>
+        )}
+
+        {/* Indicateurs dessus le sillet — propres à chaque diagramme */}
+        {diagram && (
+          <div className={FRAME}>
+            <h3 className={FRAME_TITLE}>Indicateurs dessus le sillet</h3>
+            <select
+              value={diagram.nutIndicator ?? 'none'}
+              onChange={(e) =>
+                updateActiveDiagram((d) => ({
+                  ...d,
+                  nutIndicator: toNutIndicatorType(e.target.value),
+                }))
+              }
+              className={SELECT}
+            >
+              <option value="notes">Accordage</option>
+              <option value="none">Aucun</option>
+            </select>
+            <p className={FRAME_HINT}>Note de la corde à vide, au-dessus des ○ / ×</p>
+          </div>
+        )}
+
         {/* Indicateurs sous la table */}
-        <div className="space-y-2 bg-neutral-900/60 p-2.5 border border-neutral-800">
-          <h3 className="text-xs font-bold text-gold uppercase tracking-wider">
-            Indicateurs sous la touche
-          </h3>
+        <div className={FRAME}>
+          <h3 className={FRAME_TITLE}>Indicateurs sous la touche</h3>
           <select
             value={style.bottomIndicatorType}
             onChange={(e) =>
@@ -281,7 +351,7 @@ export default function RightSidebar() {
                 bottomIndicatorType: toBottomIndicatorType(e.target.value),
               })
             }
-            className="w-full bg-neutral-900 border border-neutral-800 px-3 py-2 text-sm text-neutral-200 focus:outline-none focus:border-gold font-medium"
+            className={SELECT}
           >
             <option value="notes">Note</option>
             <option value="fingerings">Doigtés Personnalisés</option>

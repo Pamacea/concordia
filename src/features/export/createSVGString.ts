@@ -6,8 +6,8 @@ import {
   freeTextMetrics,
 } from '../../lib/geometry';
 import { diagramFingering } from '../../lib/fingering';
-import { bottomLabel } from '../../lib/labels';
-import { getIntervalInfo } from '../../lib/theory';
+import { bottomLabel, nutLabel } from '../../lib/labels';
+import { getIntervalInfo, tuningOffsets } from '../../lib/theory';
 import type { Diagram, StyleSettings } from '../../lib/types';
 
 /** Échappe les caractères XML des contenus utilisateur (textes, noms). */
@@ -22,6 +22,7 @@ const escapeXml = (value: string): string =>
 /** Génère la représentation SVG autonome d'un diagramme (pour l'export). */
 export const createSVGString = (diag: Diagram, style: StyleSettings): string => {
   const startFret = diag.startFret || 1;
+  const offsets = tuningOffsets(diag.tuning);
   const layout = diagramLayout(diag, style);
   const {
     frets,
@@ -38,6 +39,8 @@ export const createSVGString = (diag: Diagram, style: StyleSettings): string => 
     height: canvasH,
     hasBottom,
     bottomOffset,
+    hasNutLabels,
+    nutLabelY,
   } = layout;
   const scale = dotScale(gap);
   const dotR = 22 * scale;
@@ -62,6 +65,17 @@ export const createSVGString = (diag: Diagram, style: StyleSettings): string => 
       const nx = horizontal ? offsetY + i * gap + gap / 2 : offsetX - FRET_NUM_GAP;
       const ny = horizontal ? canvasH - 37 : offsetY + i * gap + gap / 2;
       fretNumsHTML += `<text x="${nx}" y="${ny}" fill="${style.fretNumberColor}" font-size="${style.fretNumberSize}" font-weight="bold" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">${startFret + i}</text>`;
+    }
+  }
+
+  let nutLabelsHTML = '';
+  if (hasNutLabels) {
+    for (let i = 0; i < 6; i++) {
+      const label = nutLabel(diag, i);
+      if (!label) continue;
+      const lx = X(stringX(i), nutLabelY);
+      const ly = Y(stringX(i), nutLabelY);
+      nutLabelsHTML += `<text x="${lx}" y="${ly}" fill="#cfa86a" font-size="16" font-weight="bold" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">${label}</text>`;
     }
   }
 
@@ -98,7 +112,7 @@ export const createSVGString = (diag: Diagram, style: StyleSettings): string => 
   const notesHTML = diag.notes
     .filter((note) => note.f < frets)
     .map((note) => {
-      const info = getIntervalInfo(diag.root, note, startFret);
+      const info = getIntervalInfo(diag.root, note, startFret, offsets);
       const nx = X(stringX(note.s), offsetY + note.f * gap + gap / 2);
       const ny = Y(stringX(note.s), offsetY + note.f * gap + gap / 2);
       return `<circle cx="${nx}" cy="${ny}" r="${dotR}" fill="${info.color}"/><text x="${nx}" y="${ny}" fill="${info.text}" font-size="${15 * scale}" font-weight="bold" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">${info.label}</text>`;
@@ -153,6 +167,7 @@ export const createSVGString = (diag: Diagram, style: StyleSettings): string => 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${canvasW}" height="${canvasH}" viewBox="0 0 ${canvasW} ${canvasH}">
       <rect width="100%" height="100%" fill="${style.diagramBgColor}"/>
       ${titleHTML}
+      ${nutLabelsHTML}
       ${nutIndicatorsHTML}
       ${stringsHTML}
       ${fretsHTML}
