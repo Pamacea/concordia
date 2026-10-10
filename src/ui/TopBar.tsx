@@ -1,8 +1,8 @@
-import { useRef } from 'react';
-import { ChevronLeft, ChevronRight, Download, Upload } from 'lucide-react';
+import { useState } from 'react';
+import { ChevronLeft, ChevronRight, Download, Maximize2, Minimize2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { importChordsFile } from '../features/import/importJson';
 import { useChordsStore } from '../lib/store/chordsStore';
+import ImportButton from './ImportButton';
 
 interface TopBarProps {
   onOpenExport: () => void;
@@ -14,8 +14,20 @@ export default function TopBar({ onOpenExport }: TopBarProps) {
   const groups = useChordsStore((s) => s.groups);
   const updateActiveDiagram = useChordsStore((s) => s.updateActiveDiagram);
   const setActiveDiagram = useChordsStore((s) => s.setActiveDiagram);
+  const setSidebar = useChordsStore((s) => s.setSidebar);
+  const leftSidebarOpen = useChordsStore((s) => s.leftSidebarOpen);
+  const rightSidebarOpen = useChordsStore((s) => s.rightSidebarOpen);
 
-  const fileInputRef = useRef<HTMLInputElement | null>(null);
+  /** Mode zen : état local + fermeture des deux sidebars (réouverture = sortie). */
+  const [zen, setZen] = useState(false);
+  const zenActive = zen && !leftSidebarOpen && !rightSidebarOpen;
+  const toggleZen = () => {
+    const next = !zenActive;
+    setZen(next);
+    setSidebar('left', !next);
+    setSidebar('right', !next);
+  };
+
   const diagram = activeDiagramId ? (diagrams[activeDiagramId] ?? null) : null;
 
   /** Navigation entre diagrammes (liste ordonnée) — pour téléphone sans panneau. */
@@ -27,14 +39,11 @@ export default function TopBar({ onOpenExport }: TopBarProps) {
     setActiveDiagram(orderedIds[next]);
   };
 
-  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) void importChordsFile(file);
-    e.target.value = '';
-  };
-
   return (
-    <div className="h-16 bg-neutral-950 border-b border-neutral-800 flex items-center justify-between px-3 md:px-5 z-25 shrink-0 relative">
+    <div
+      data-focus-zone="top"
+      className="h-16 bg-neutral-950 border-b border-neutral-800 flex items-center justify-between px-3 md:px-5 z-25 shrink-0 relative"
+    >
       {/* Section gauche : nom → retour accueil */}
       <div className="flex items-center justify-start py-1 z-10">
         <Link
@@ -49,61 +58,64 @@ export default function TopBar({ onOpenExport }: TopBarProps) {
       {/* Titre centré dans l'espace restant (jamais par-dessus logo/boutons) */}
       <div className="flex-1 min-w-0 px-2 flex items-center justify-center">
         {diagram && (
-          <div className="flex items-stretch gap-1.5 max-w-full min-w-0">
-            <button
-              onClick={() => stepDiagram(-1)}
-              disabled={orderedIds.length < 2}
-              title="Accord précédent"
-              className="flex items-center justify-center px-2 bg-neutral-900 hover:bg-neutral-800 text-neutral-400 hover:text-gold border border-neutral-800 transition-colors shrink-0 disabled:opacity-40 disabled:pointer-events-none"
-            >
-              <ChevronLeft size={16} />
-            </button>
+          <div className="flex items-stretch gap-1.5 min-w-0" style={{ maxWidth: '100%' }}>
+            {!zenActive && (
+              <button
+                onClick={() => stepDiagram(-1)}
+                disabled={orderedIds.length < 2}
+                title="Accord précédent"
+                className="flex items-center justify-center px-2 bg-neutral-900 hover:bg-neutral-800 text-neutral-400 hover:text-gold border border-neutral-800 transition-colors shrink-0 disabled:opacity-40 disabled:pointer-events-none"
+              >
+                <ChevronLeft size={16} />
+              </button>
+            )}
 
             <div className="flex items-center gap-2 bg-neutral-900/90 px-3.5 py-1.5 border border-neutral-800 shadow-inner focus-within:border-gold transition-colors rounded-none min-w-0 overflow-hidden">
               <span className="hidden lg:inline text-[11px] font-bold text-gold uppercase tracking-wider">
                 Titre
               </span>
-              <div className="hidden lg:block w-px h-4 bg-neutral-800"></div>
+              <div className="hidden lg:block w-px h-4 bg-neutral-800" />
               <input
                 type="text"
                 value={diagram.name}
-                onChange={(e) =>
-                  updateActiveDiagram((d) => ({ ...d, name: e.target.value }))
-                }
+                onChange={(e) => updateActiveDiagram((d) => ({ ...d, name: e.target.value }))}
                 className="bg-transparent text-white text-sm lg:text-base px-2 lg:px-3 py-1 focus:outline-none w-28 sm:w-36 lg:w-60 min-w-0 font-semibold tracking-wide placeholder:text-neutral-600 rounded-none"
                 placeholder="Nom de l'accord..."
               />
             </div>
 
-            <button
-              onClick={() => stepDiagram(1)}
-              disabled={orderedIds.length < 2}
-              title="Accord suivant"
-              className="flex items-center justify-center px-2 bg-neutral-900 hover:bg-neutral-800 text-neutral-400 hover:text-gold border border-neutral-800 transition-colors shrink-0 disabled:opacity-40 disabled:pointer-events-none"
-            >
-              <ChevronRight size={16} />
-            </button>
+            {!zenActive && (
+              <button
+                onClick={() => stepDiagram(1)}
+                disabled={orderedIds.length < 2}
+                title="Accord suivant"
+                className="flex items-center justify-center px-2 bg-neutral-900 hover:bg-neutral-800 text-neutral-400 hover:text-gold border border-neutral-800 transition-colors shrink-0 disabled:opacity-40 disabled:pointer-events-none"
+              >
+                <ChevronRight size={16} />
+              </button>
+            )}
           </div>
         )}
       </div>
 
       {/* Actions droite */}
       <div className="flex items-center gap-2 md:gap-3 justify-end shrink-0 z-10">
-        <input
-          type="file"
-          ref={fileInputRef}
-          onChange={handleFileUpload}
-          accept=".json"
-          className="hidden"
-        />
-
         <button
-          onClick={() => fileInputRef.current?.click()}
-          className="flex items-center gap-1.5 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 px-3.5 py-2 text-xs md:text-sm font-medium transition-colors border border-neutral-700 shrink-0"
+          type="button"
+          onClick={toggleZen}
+          aria-pressed={zenActive}
+          title={zenActive ? 'Quitter le mode zen' : 'Activer le mode zen'}
+          className={`flex items-center gap-1.5 px-3 py-2 text-xs md:text-sm font-medium transition-colors border shrink-0 ${
+            zenActive
+              ? 'bg-gold/15 border-gold text-gold'
+              : 'bg-neutral-800 hover:bg-neutral-700 text-neutral-200 border-neutral-700'
+          }`}
         >
-          <Upload size={16} />
-          <span className="hidden sm:inline">Importer</span>
+          {zenActive ? <Maximize2 size={16} /> : <Minimize2 size={16} />}
+          <span className="hidden sm:inline">Mode zen</span>
         </button>
+
+        <ImportButton hidden={zenActive} />
 
         <button
           onClick={onOpenExport}

@@ -1,9 +1,5 @@
 import { diagramFingering } from './fingering';
-import {
-  getIntervalInfo,
-  getNoteName,
-  tuningOffsets,
-} from './theory';
+import { getIntervalInfo, getNoteName, tuningOffsets } from './theory';
 import type { Diagram, StyleSettings } from './types';
 
 /** Libellé affiché sous la table pour une corde donnée. */

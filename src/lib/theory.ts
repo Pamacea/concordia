@@ -46,11 +46,7 @@ const UNKNOWN: IntervalInfo = { label: '?', color: '#6b7280', text: '#ffffff' };
 const pitchClass = (pitch: number): number => ((pitch % 12) + 12) % 12;
 
 /** Pitch absolu (démis tons depuis Mi2) d'une position donnée. */
-const pitchOf = (
-  pos: Position,
-  startFret: number,
-  offsets: number[] = STRING_OFFSETS,
-): number => {
+const pitchOf = (pos: Position, startFret: number, offsets: number[] = STRING_OFFSETS): number => {
   const actualFret = pos.f === -1 ? 0 : startFret + pos.f;
   return offsets[pos.s] + actualFret;
 };

@@ -4,13 +4,7 @@
     {
       "id": "1cykvap",
       "name": "Accords Majeurs & Triades (Cordes 6, 5, 4)",
-      "diagramIds": [
-        "38cs2rt",
-        "sxttiah",
-        "ngstq77",
-        "hkr0xru",
-        "xt5s23y"
-      ]
+      "diagramIds": ["38cs2rt", "sxttiah", "ngstq77", "hkr0xru", "xt5s23y"]
     },
     {
       "id": "n3kwgsv",
@@ -104,12 +98,7 @@
     {
       "id": "add_chords_grp",
       "name": "Accords Additions (add9, add11)",
-      "diagramIds": [
-        "c_add9_c5_st5",
-        "c_add11_c5_st5",
-        "c_cased_add9",
-        "twbhjth"
-      ]
+      "diagramIds": ["c_add9_c5_st5", "c_add11_c5_st5", "c_cased_add9", "twbhjth"]
     },
     {
       "id": "5i28ttv",
@@ -158,11 +147,7 @@
     {
       "id": "5i0hyiz",
       "name": "Accords Demi-diminués (m7b5)",
-      "diagramIds": [
-        "twmsk7m",
-        "tdw16h2",
-        "nerwvae"
-      ]
+      "diagramIds": ["twmsk7m", "tdw16h2", "nerwvae"]
     },
     {
       "id": "ty80wtk",
@@ -182,23 +167,12 @@
     {
       "id": "j9zqxyr",
       "name": "Power Chords & Renversements",
-      "diagramIds": [
-        "k19jwv8",
-        "mtkp6jg",
-        "lw0xwmx",
-        "3r089dd",
-        "783umic"
-      ]
+      "diagramIds": ["k19jwv8", "mtkp6jg", "lw0xwmx", "3r089dd", "783umic"]
     },
     {
       "id": "p6w73kx",
       "name": "Intervalle",
-      "diagramIds": [
-        "psbi19v",
-        "d52z54n",
-        "p6tiouh",
-        "qp1za8d"
-      ]
+      "diagramIds": ["psbi19v", "d52z54n", "p6tiouh", "qp1za8d"]
     }
   ],
   "diagrams": {

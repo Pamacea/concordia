@@ -12,7 +12,7 @@ export default function ColorField({ label, value, onChange }: ColorFieldProps) 
         <span
           className="w-4 h-4 rounded-full border border-neutral-600 shadow-inner"
           style={{ backgroundColor: value }}
-        ></span>
+        />
         <span className="text-[11px] font-mono text-neutral-300">{value}</span>
         <input
           type="color"

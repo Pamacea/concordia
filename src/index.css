@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   /* Or discret — référence au logo (accents du thème). */
@@ -25,16 +25,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.4);
 }
-input[type="range"] {
+input[type='range'] {
   -webkit-appearance: none;
   background: transparent;
 }
-input[type="range"]::-webkit-slider-runnable-track {
+input[type='range']::-webkit-slider-runnable-track {
   height: 4px;
   background: #27272a;
   border-radius: 0;
 }
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 12px;
   width: 12px;
@@ -44,6 +44,86 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   border: 1px solid #a8813c;
 }
-input[type="range"]::-webkit-slider-thumb:hover {
+input[type='range']::-webkit-slider-thumb:hover {
   background: #e3c38a;
+}
+
+/* ————— Landing page (features/home) ————— */
+
+/* Marquee de noms d'accords (FinalCTA). */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Bordure en marche d'avion (usage futur). */
+@keyframes ants {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+
+/* SVG injecté du showcase : se cale sur la largeur du conteneur (style maxWidth). */
+.diagram-preview svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ————— Éditeur ————— */
+
+/* Marche d'avion sur une bordure (div) : 4 filets pointillés qui défilent. */
+@keyframes ants-border {
+  to {
+    background-position:
+      12px 0,
+      12px 100%,
+      0 12px,
+      100% 12px;
+  }
+}
+.ants {
+  position: relative;
+}
+.ants::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(to right, currentColor 0 6px, transparent 6px 12px),
+    repeating-linear-gradient(to right, currentColor 0 6px, transparent 6px 12px),
+    repeating-linear-gradient(to bottom, currentColor 0 6px, transparent 6px 12px),
+    repeating-linear-gradient(to bottom, currentColor 0 6px, transparent 6px 12px);
+  background-position:
+    0 0,
+    0 100%,
+    0 0,
+    100% 0;
+  background-size:
+    12px 1px,
+    12px 1px,
+    1px 12px,
+    1px 12px;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  animation: ants-border 0.7s linear infinite;
+}
+
+/* Accessibilité : mouvement réduit au niveau système. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

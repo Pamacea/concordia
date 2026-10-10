@@ -5,3 +5,5 @@ dist/
 .DS_Store
 .smite/
 nul
+.screens/
+oxlint-report.json
